@@ -11,15 +11,17 @@
 
     
 
-    <div style="width: 100%; height: 100%">
+    <div style="width: 100%;">
         <?php drawNavbar(); ?>
 
         <center>
-            <div style="padding-top: 150px">
+            <div style="padding-top: 150px; height: 59%">
                 <a class="boldfont" style="color: #A6B8C8; font-size: 500%;"> Welcome :D</a> <br>
                 <a class="boldfont" style="color: #A6B8C8; font-size: 200%;"> seems pretty empty here, doesn't it? hmm</a> <br>
             </div>
         </center>
+
+        <?php echo drawFooter(); ?>
     </div>
 
 </html>

@@ -5,14 +5,36 @@
             <div style="background-color: #161F28; width: 100%; height: 80px">
                 <center> <table style="float: center">
                     <tr>
-                        <td class="navbar-td"> <a class="boldfont" href="../home"> Home </a> </td>
-                        <td class="navbar-td"> <a class="boldfont" href="projects"> Projects </a> </td>
-                        <td class="navbar-td"> <a class="boldfont" href="about"> About </a> </td>
-                        <td class="navbar-td"> <a class="boldfont" href="login"> Login </a> </td>
+                        <td class="navbar-td"> <a class="boldfont" href="../home"> home </a> </td>
+                        <td class="navbar-td"> <a class="boldfont" href="projects"> work </a> </td>
+                        <td class="navbar-td"> <a class="boldfont" href="about"> about </a> </td>
+                        <td class="navbar-td"> <a class="boldfont" href="login"> login </a> </td>
                     </tr>
                 </table> </center>
             </div>
         <?php
+    }
+
+    function drawFooter() {
+        ?>
+            <center style="background-color: #ECECF2">
+                <footer style="float: bottom; width: 500px; height: 100px; padding-top: 50px">
+                    <p style="color: #34342E; font-size: 22px"> designed and built by <a class="boldfont"> bats </a> </p>
+                    <p style="color: #34342E; font-size: 20px"> contact<a class="boldfont">@bats.li</a> </p>
+                </footer>
+            </center>
+        <?php
+    }
+
+    function customText($text, $type) {
+
+        $output = "";
+
+        if ($type == "pageHeader") {
+            $output = "<div class='pageHeaderSlash pageHeader boldfont'>/</div>" . "<div class='pageHeader boldfont'>" .  $text . "</div>";
+        }
+
+        return $output;
     }
 
     function drawAchievement($title, $logo_img, $logo_desc, $category_img, $category_desc, $prize, $date) {
@@ -66,7 +88,7 @@
 
                     <a style="float: right; color: black; font-size: 14px" class="boldfont cardTitle"> <?php echo $date ?> </a> 
                     <br> <br>
-                    <a style="color: #7079A2" class="boldfont cardText"> <?php echo $desc ?> </a>
+                    <a style="color: #7079A2" class="cardText"> <?php echo $desc ?> </a>
                 </div>
 
             </div>

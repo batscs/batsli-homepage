@@ -11,12 +11,12 @@
 
     
 
-    <div style="width: 100%; height: 100%">
+    <div style="width: 100%;">
         <?php drawNavbar(); ?>
 
         <center>
             <div style="padding-top: 50px">
-                <a class="boldfont" style="color: #A6B8C8; font-size: 500%;"> My Projects</a>
+                <?php echo customText("work", "pageHeader"); ?>
             </div>
 
             <?php
@@ -60,8 +60,9 @@
                 <?php drawCard("Fireman Game", "software", $filter,  "Sep 2017 - Oct 2017",  "My first Java Game, don't expect too much, or anything at all", "https://github.com/batscs/Fireman", "https://github.com/batscs/Fireman", "fireman.png")?>
             </div> 
         </center>
-    </div>
 
-    
+        <?php echo drawFooter(); ?>
+
+    </div>
 
 </html>

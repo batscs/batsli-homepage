@@ -17,12 +17,12 @@
 
         <center>
             <div style="padding-top: 50px">
-                <a class="boldfont" style="color: #A6B8C8; font-size: 500%;"> Bats' Dashboard</a>
+                <?php echo customText("login", "pageHeader"); ?>
             </div>
         </center>
 
         <center>
-            <div style="padding-top: 50px">
+            <div style="padding-top: 50px; height: 500px">
                 <form method="post">
 
                         <input type="text" class="input mainfont" name="username" placeholder="Username" required><br>
@@ -80,7 +80,7 @@
             </div>
         </center>
 
-        
+        <?php echo drawFooter(); ?>
     </div>
 
 </html>

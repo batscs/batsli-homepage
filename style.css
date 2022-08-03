@@ -29,6 +29,7 @@
 
 html {
   width: 100vw;
+  overflow-x: hidden;
 }
 
 * {
@@ -190,5 +191,16 @@ body {
 
 .achievement-card img {
   border-radius: 5px;;
+}
+
+.pageHeader {
+  display: inline-block;
+  color: #A6B8C8; 
+  font-size: 500%;
+}
+
+.pageHeaderSlash {
+  color: #3C4248;
+  display: inline-block
 }
 
