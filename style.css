@@ -1,0 +1,194 @@
+@font-face {
+  font-family: BostonRegular; /* CAN BE ANYTHING YOU WANT */
+  src: url("../font/Boston/BostonSemiBold.otf");
+}
+
+@font-face {
+  font-family: BostonBold; /* CAN BE ANYTHING YOU WANT */
+  src: url("../font/Boston/BostonBold.otf");
+}
+
+@font-face {
+  font-family: FuturaBold; /* CAN BE ANYTHING YOU WANT */
+  src: url("../font/Futura/futura medium condensed bt.ttf");
+}
+
+@font-face {
+  font-family: HalveticaBold; /* CAN BE ANYTHING YOU WANT */
+  src: url("../font/Halvetica/Helvetica-Bold.ttf");
+}
+
+@font-face {
+  font-family: RockwellBold; /* CAN BE ANYTHING YOU WANT */
+  src: url("../font/Rockwell/rockb.ttf");
+}
+
+.boldfont {
+  font-family: BostonBold;
+}
+
+html {
+  width: 100vw;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: BostonRegular;
+}
+
+body {
+  height: 100%;
+
+  background-color: #40739e;
+  background-color: #f8f8ff;
+}
+
+.img {
+  cursor: pointer;
+  border-radius: 0px;
+}
+
+.main {
+  width: 350px;
+  height: 400px;
+
+  margin-bottom: 20px;
+
+  margin: 20px 50px;
+
+  color: black;
+}
+
+.main-text {
+  border-bottom: 4px solid #EFEFEF;
+  border-right: 4px solid #EFEFEF;
+  border-left: 2px solid #EFEFEF;
+
+}
+
+.cardTitle {
+  font-size: 22px;
+}
+
+.cardText {
+  font-size: 17px;
+}
+
+.navbar-td {
+  width: 200px;
+  padding: 18px;
+  color: white;
+  font-size: 28px;
+}
+
+.navbar-td a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-td a:hover {
+  transition: 0.2s;
+  color: #e84118;
+}
+
+.input {
+  padding: 4px;
+  margin-bottom: 20px;
+
+  font-size: 28px;
+
+  outline: 0;
+  background: none;
+  border-width: 0 0 3px;
+  border-color: #161F28;
+}
+
+.button {
+  width: 350px;
+  font-size: 28px;
+  padding: 2px 0px;
+}
+
+.input:focus {
+  border-color: #4156B9;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-filter {
+  margin-top: 20px;
+}
+
+.filter-container {
+  list-style:none;
+  display:flex;
+
+  justify-content: center;
+}
+
+.filter-btn {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.filter-start{
+  border: 1px solid grey;
+  text-align: center;
+  padding: 0.5em 1em;;
+  border-top-left-radius: 5%;
+  border-bottom-left-radius: 5%;
+  border-right: 0px;
+  }
+
+.filter-btn:hover{
+  color: white;
+  background: #3D5065;
+}
+
+.filter-middle{
+  border: 1px solid grey;
+  text-align: center;
+  padding: 0.5em 1em;
+  border-right: 0px;
+
+}
+
+.filter-end{
+  border: 1px solid grey;
+  text-align: center;
+  padding: 0.5em 1em;
+  border-top-right-radius: 5%;
+  border-bottom-right-radius: 5%;
+}
+
+.achievement-card {
+  margin-top: 20px; 
+  background-color: #202020; 
+  border-radius: 10px;
+  padding: 0;
+  margin: 0;
+
+  margin-top: 20px;
+  
+}
+
+.achievement-card table {
+  color: white;
+}
+
+.achievement-card table td {
+  padding: 20px;
+
+  border-right: 4px solid #404040;
+}
+
+.achievement-card img {
+  border-radius: 5px;;
+}
+
