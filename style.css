@@ -38,16 +38,22 @@ html {
   font-family: BostonRegular;
 }
 
+::selection {
+  color: #f8f8ff;
+  background-color: #e84118;
+}
+
 body {
   height: 100%;
 
   background-color: #40739e;
   background-color: #f8f8ff;
+  
 }
 
 .img {
   cursor: pointer;
-  border-radius: 0px;
+  border-radius: 10px 10px 0px 0px;
 }
 
 .main {
@@ -65,7 +71,10 @@ body {
   border-bottom: 4px solid #EFEFEF;
   border-right: 4px solid #EFEFEF;
   border-left: 2px solid #EFEFEF;
+  
+  border-radius: 0px 0px 10px 10px;
 
+  background-color: white;
 }
 
 .cardTitle {
@@ -148,8 +157,8 @@ body {
   }
 
 .filter-btn:hover{
-  color: white;
-  background: #3D5065;
+  color: #f8f8ff;
+  background: #e84118;
 }
 
 .filter-middle{
@@ -195,7 +204,7 @@ body {
 
 .pageHeader {
   display: inline-block;
-  color: #A6B8C8; 
+  color: #7D96AB; 
   font-size: 500%;
 }
 

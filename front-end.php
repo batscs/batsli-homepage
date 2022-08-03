@@ -5,10 +5,10 @@
             <div style="background-color: #161F28; width: 100%; height: 80px">
                 <center> <table style="float: center">
                     <tr>
-                        <td class="navbar-td"> <a class="boldfont" href="../home"> home </a> </td>
-                        <td class="navbar-td"> <a class="boldfont" href="projects"> work </a> </td>
-                        <td class="navbar-td"> <a class="boldfont" href="about"> about </a> </td>
-                        <td class="navbar-td"> <a class="boldfont" href="login"> login </a> </td>
+                        <td class="navbar-td"> <a class="boldfont" href="../home">home</a> </td>
+                        <td class="navbar-td"> <a class="boldfont" href="work">work</a> </td>
+                        <td class="navbar-td"> <a class="boldfont" href="about">about</a> </td>
+                        <td class="navbar-td"> <a class="boldfont" href="login">login</a> </td>
                     </tr>
                 </table> </center>
             </div>

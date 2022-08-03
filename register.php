@@ -1,6 +1,6 @@
 <?php
     require_once("front-end.php");
-    require_once("../mysql.php");
+    require_once("../mysql.php"); // notice, a mysql connection is required here
     require_once("functions.php");
 ?> 
 
