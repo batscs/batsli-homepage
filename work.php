@@ -16,7 +16,7 @@
         <?php drawNavbar(); ?>
 
         <center>
-            <div style="padding-top: 50px">
+            <div style="padding-top: 30px">
                 <?php echo customText("work", "pageHeader"); ?>
             </div>
 
@@ -35,10 +35,10 @@
 
             <div class="project-filter">
                 <ul class="filter-container">
-                    <div onclick="projectPageSetFilter('all');" class="filter-btn filter-start"><li>All</li></div>
-                    <div onclick="projectPageSetFilter('webdev');" class="filter-btn filter-middle"><li>Webdesign</li></div>
-                    <div onclick="projectPageSetFilter('software');" class="filter-btn filter-middle"><li>Software</li></div>
-                    <div onclick="projectPageSetFilter('other');" class="filter-btn filter-end"><li>Other</li></div>
+                    <div onclick="projectPageSetFilter('all');" class="<?php if ($filter == 'all') { echo 'filter-highlight'; }?> filter-btn filter-start"><li>All</li></div>
+                    <div onclick="projectPageSetFilter('webdev');" class="<?php if ($filter == 'webdev') { echo 'filter-highlight'; }?> filter-btn filter-middle"><li>Webdesign</li></div>
+                    <div onclick="projectPageSetFilter('software');" class="<?php if ($filter == 'software') { echo 'filter-highlight'; }?> filter-btn filter-middle"><li>Software</li></div>
+                    <div onclick="projectPageSetFilter('other');" class="<?php if ($filter == 'other') { echo 'filter-highlight'; }?> filter-btn filter-end"><li>Other</li></div>
                 </ul>
             </div>
 

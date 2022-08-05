@@ -18,7 +18,7 @@
         <?php drawNavbar(); ?>
 
         <center>
-            <div style="padding-top: 50px">
+            <div style="padding-top: 30px">
                 <?php echo customText("register", "pageHeader"); ?>
             </div>
         </center>

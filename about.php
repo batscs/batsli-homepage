@@ -16,7 +16,7 @@
         <?php drawNavbar(); ?>
 
         <center>
-            <div style="padding-top: 50px; padding-bottom: 20px">
+            <div style="padding-top: 30px; padding-bottom: 20px">
                 <?php echo customText("about", "pageHeader"); ?>
             </div>
 

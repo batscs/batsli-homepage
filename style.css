@@ -98,7 +98,7 @@ body {
 
 .navbar-td a:hover {
   transition: 0.2s;
-  color: #e84118;
+  color: #7D96AB;
 }
 
 .input {
@@ -144,36 +144,38 @@ body {
 .filter-btn {
   cursor: pointer;
   font-size: 20px;
-}
 
-.filter-start{
-  border: 1px solid grey;
+  border: 2px solid #3C4248;
   text-align: center;
-  padding: 0.5em 1em;;
-  border-top-left-radius: 5%;
-  border-bottom-left-radius: 5%;
-  border-right: 0px;
-  }
+}
 
 .filter-btn:hover{
   color: #f8f8ff;
-  background: #e84118;
+  background: #7D96AB;
+  
 }
 
+.filter-highlight {
+  background-color: #3C4248;
+  color: white;
+}
+
+.filter-start{
+  padding: 0.5em 1em;;
+  border-top-left-radius: 10%;
+  border-bottom-left-radius: 10%;
+  border-right: 0px;
+  }
+
 .filter-middle{
-  border: 1px solid grey;
-  text-align: center;
   padding: 0.5em 1em;
   border-right: 0px;
-
 }
 
 .filter-end{
-  border: 1px solid grey;
-  text-align: center;
   padding: 0.5em 1em;
-  border-top-right-radius: 5%;
-  border-bottom-right-radius: 5%;
+  border-top-right-radius: 10%;
+  border-bottom-right-radius: 10%;
 }
 
 .achievement-card {
@@ -204,11 +206,16 @@ body {
 .pageHeader {
   display: inline-block;
   color: #7D96AB; 
-  font-size: 500%;
+  font-size: 400%;
 }
 
 .pageHeaderSlash {
   color: #3C4248;
   display: inline-block
+}
+
+.pageHeaderPrefix {
+  color: #161F28;
+  display: inline-block;
 }
 
