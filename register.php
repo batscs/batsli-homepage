@@ -9,6 +9,7 @@
     <head>
         <link rel="stylesheet" href="style.css">
         <link rel="icon" href="img/batsli_square.png">
+        <title> /home/register </title>
     </head>
 
     
