@@ -75,16 +75,15 @@
 
                 <div class="main-text" style="display: inline-block; text-align: left; padding: 10px; padding-top: 15px; height: 130px"> 
                     
-
-                    <a style="" class="boldfont cardTitle"> <?php echo $card ?> </a> 
                     <?php if ($github != "-1") {
                         ?>
-                            <div class="img" onclick="cardClick('<?php echo $github; ?>')" style="display: inline-block; margin-top: 0px; margin-left: 5px; width: 18px; height: 18px; background-image: url('img/github.png'); background-size: 100% 100%;"> 
+                            <div class="img" onclick="cardClick('<?php echo $github; ?>')" style="display: inline-block; margin-top: 0px; margin-right: 5px; width: 18px; height: 18px; background-image: url('img/github.png'); background-size: 100% 100%;"> 
 
                             </div>
                         <?php
                         }
                     ?>
+                    <a style="" class="boldfont cardTitle"> <?php echo $card ?> </a> 
 
                     <a style="float: right; color: black; font-size: 14px" class="boldfont cardTitle"> <?php echo $date ?> </a> 
                     <br> <br>
