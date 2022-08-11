@@ -38,16 +38,51 @@ html {
   font-family: BostonRegular;
 }
 
+:root {
+  
+  
+  --highlight: #e84118; 
+
+  --mainfont: #000000;
+  --inversefont: #FFFFFF;
+  --lowkeyfont: #7D96AB;
+  --heavyfont: #161F28;
+
+  --soft: #f8f8ff;
+  --softheavy: #161F27;
+  --softvariation: #FCFCFC;
+  --softhighlight: #EFEFEF;
+
+  --accent: #3C4248;
+  
+  
+}
+
+.dark-mode {
+  --highlight: #e84118; 
+
+  --mainfont: #ffffff;
+  --inversefont: #FFFFFF;
+  --lowkeyfont: #bebdbd;
+  --heavyfont: #ececec;
+
+  --soft: #202020;
+  --softheavy: #171717;
+  --softvariation: #353535;
+  --softhighlight: #282828;
+
+  --accent: #686868;
+}
+
 ::selection {
-  color: #f8f8ff;
-  background-color: #e84118;
+  color: var(--soft);
+  background-color: var(--highlight);
 }
 
 body {
   height: 100%;
 
-  background-color: #40739e;
-  background-color: #f8f8ff;
+  background-color: var(--soft);
   
 }
 
@@ -64,36 +99,55 @@ body {
 
   margin: 20px 50px;
 
-  color: black;
+  color: var(--mainfont);
 }
 
 .main-text {
-  border-bottom: 4px solid #EFEFEF;
-  border-right: 4px solid #EFEFEF;
-  border-left: 2px solid #EFEFEF;
+  border-bottom: 4px solid var(--softhighlight);
+  border-right: 4px solid var(--softhighlight);
+  border-left: 2px solid var(--softhighlight);
   
 
-  background-color: #FCFCFF;
+  background-color: var(--softvariation);
 }
 
 .cardTitle {
   font-size: 22px;
 }
 
+.cardDate {
+  float: right; 
+  color: var(--mainfont); 
+  font-size: 14px
+}
+
 .cardText {
   font-size: 17px;
+  color: var(--lowkeyfont);
+}
+
+.navbar-div {
+  background-color: var(--softheavy); 
+  width: 100%; 
+  height: 80px
 }
 
 .navbar-td {
   width: 120px;
   text-align: center;
   padding: 18px;
-  color: white;
+  color: var(--inversefont);
   font-size: 28px;
 }
 
+.navbar-td-darkmode {
+  width: 40px;
+  padding: 0;
+  cursor: pointer;
+}
+
 .navbar-td-spacer {
-  background-color: #3C4248;
+  background-color: var(--accent);
   height: 40px; 
   width: 4px;
   border-radius: 5px;
@@ -108,13 +162,13 @@ body {
 }
 
 .navbar-td a {
-  color: white;
+  color: var(--inversefont);
   text-decoration: none;
 }
 
 .navbar-td a:hover {
   transition: 0.2s;
-  color: #7D96AB;
+  color: var(--lowkeyfont);
 }
 
 .input {
@@ -126,7 +180,7 @@ body {
   outline: 0;
   background: none;
   border-width: 0 0 3px;
-  border-color: #161F28;
+  border-color: var(--heavyfont);
 }
 
 .button {
@@ -136,7 +190,7 @@ body {
 }
 
 .input:focus {
-  border-color: #4156B9;
+  border-color: var(--highlight);
 }
 
 .flex-container {
@@ -161,18 +215,20 @@ body {
   cursor: pointer;
   font-size: 20px;
 
-  border: 2px solid #3C4248;
+  border: 2px solid var(--accent);
   text-align: center;
+
+  color: var(--mainfont);
 }
 
 .filter-btn:hover{
-  color: #f8f8ff;
-  background: #7D96AB;
+  color: var(--soft);
+  background: var(--lowkeyfont);
   
 }
 
 .filter-highlight {
-  background-color: #3C4248;
+  background-color: var(--accent);
   color: white;
 }
 
@@ -196,7 +252,7 @@ body {
 
 .achievement-card {
   margin-top: 20px; 
-  background-color: #202020; 
+  background-color: var(--heavyfont); 
   border-radius: 10px;
   padding: 0;
   margin: 0;
@@ -212,7 +268,7 @@ body {
 .achievement-card table td {
   padding: 20px;
 
-  border-right: 4px solid #404040;
+  border-right: 4px solid var(--accent);
 }
 
 .achievement-card img {
@@ -221,17 +277,25 @@ body {
 
 .pageHeader {
   display: inline-block;
-  color: #7D96AB; 
+  color: var(--lowkeyfont); 
   font-size: 400%;
 }
 
 .pageHeaderSlash {
-  color: #3C4248;
+  color: var(--accent);
   display: inline-block
 }
 
 .pageHeaderPrefix {
-  color: #161F28;
+  color: var(--heavyfont);
   display: inline-block;
+}
+
+.footer-bg {
+  background-color: var(--softhighlight);
+}
+
+.footer-bg p {
+  color: var(--accent);
 }
 

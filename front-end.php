@@ -2,27 +2,37 @@
 
     function drawNavbar() {
         ?>
-            <div style="background-color: #161F28; width: 100%; height: 80px">
+            <div class="navbar-div" style="">
                 <center> <table style="float: center">
                     <tr>
+                        <td onclick="toggleDarkMode()" class="navbar-td-darkmode navbar-td"> <img src="img/dark_mode_switch.png" style="width: 40px"> </td>
                         <td class="navbar-td"> <a class="boldfont" href="../home">home</a> </td>
                         <td class="navbar-td"> <a class="boldfont" href="work">work</a> </td>
                         <td class="navbar-td-spacer-before navbar-td"> <a class="boldfont" href="about">about</a> </td>
                         <td> <div class="navbar-td-spacer"> </div> </td>
                         <td class="navbar-td-spacer-after navbar-td"> <a class="boldfont" href="login">login</a> </td>
                         <td class="navbar-td"> <a class="boldfont" href="upload">upload</a> </td>
+                        <div class="dark-mode"> </div>
                     </tr>
                 </table> </center>
             </div>
+
+            <script>
+
+                function toggleDarkMode() {
+                    document.body.classList.toggle("dark-mode");
+                }
+
+            </script>
         <?php
     }
 
     function drawFooter() {
         ?>
-            <center style="background-color: #ECECF2">
+            <center class="footer-bg">
                 <footer style="float: bottom; width: 500px; height: 100px; padding-top: 50px">
-                    <p style="color: #34342E; font-size: 22px"> designed and built by <a class="boldfont"> bats </a> </p>
-                    <p style="color: #34342E; font-size: 20px"> contact<a class="boldfont">@bats.li</a> </p>
+                    <p style="font-size: 22px"> designed and built by <a class="boldfont"> bats </a> </p>
+                    <p style="font-size: 20px"> contact<a class="boldfont">@bats.li</a> </p>
                 </footer>
             </center>
         <?php
@@ -87,9 +97,9 @@
                     ?>
                     <a style="" class="boldfont cardTitle"> <?php echo $card ?> </a> 
 
-                    <a style="float: right; color: black; font-size: 14px" class="boldfont cardTitle"> <?php echo $date ?> </a> 
+                    <a style="" class="boldfont cardDate cardTitle"> <?php echo $date ?> </a> 
                     <br> <br>
-                    <a style="color: #7079A2" class="cardText"> <?php echo $desc ?> </a>
+                    <a style="" class="cardText"> <?php echo $desc ?> </a>
                 </div>
 
             </div>
