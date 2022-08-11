@@ -26,7 +26,7 @@
         </center>
 
         <center>
-            <div style="padding-top: 50px; height: 500px">
+            <div style="padding-top: 50px; height: 550px">
 
                 <?php 
                     $saved_access_code = $_POST["access_code"] ?? "";

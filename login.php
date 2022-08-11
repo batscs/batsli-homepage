@@ -23,7 +23,7 @@
         </center>
 
         <center>
-            <div style="padding-top: 50px; height: 500px">
+            <div style="padding-top: 50px; height: 550px">
                 <form method="post">
 
                         <input type="text" class="input mainfont" name="username" placeholder="Username" required><br>
