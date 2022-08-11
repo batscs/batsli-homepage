@@ -76,8 +76,12 @@ html {
 }
 
 ::selection {
-  color: var(--soft);
+  color: var(--inversefont);
   background-color: var(--highlight);
+}
+
+::placeholder {
+  color: var(--mainfont);
 }
 
 body {
@@ -269,6 +273,11 @@ body {
 .small-title {
   font-size: 200%; 
   color: var(--mainfont);
+}
+
+.lowkey-title {
+  font-size: 200%;
+  color: var(--lowkeyfont);
 }
 
 .achievement-card table {

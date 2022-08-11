@@ -5,7 +5,7 @@
             <div class="navbar-div" style="">
                 <center> <table style="float: center">
                     <tr>
-                        <td onclick="toggleDarkMode()" class="navbar-td-darkmode navbar-td"> <img src="img/dark_mode_switch.png" style="width: 40px"> </td>
+                        <td onclick="toggleDarkMode()" class="navbar-td-darkmode navbar-td"> <img id="dark-mode-img" src="img/dark_mode_on.png" style="width: 40px"> </td>
                         <td class="navbar-td"> <a class="boldfont" href="../home">home</a> </td>
                         <td class="navbar-td"> <a class="boldfont" href="work">work</a> </td>
                         <td class="navbar-td-spacer-before navbar-td"> <a class="boldfont" href="about">about</a> </td>
@@ -23,9 +23,11 @@
                 if (localStorage.getItem("theme") == null) {
                     localStorage.setItem("theme", "dark");
                 }
-                
 
                 let savedTheme = localStorage.getItem("theme");
+                var img = document.getElementById("dark-mode-img");
+
+                img.src = "img/theme_" + savedTheme + ".png";
 
                 if (savedTheme == "dark") {
                     document.body.classList.add("dark-mode");
@@ -38,10 +40,14 @@
 
                     if (document.body.classList.contains("dark-mode")) {
                         // dark mode on
-                        localStorage.setItem("theme", "dark");
+                        var newTheme = "dark";
+                        localStorage.setItem("theme", newTheme);
+                        img.src = "img/theme_" + newTheme + ".png";
                     } else {
                         // dark mode off
-                        localStorage.setItem("theme", "light");
+                        var newTheme = "light";
+                        localStorage.setItem("theme", newTheme);
+                        img.src = "img/theme_" + newTheme + ".png";
                     }
                 }
 

@@ -52,8 +52,6 @@
                                     echo "invalid access code! <br>";
                                 } else {
 
-                                    // und danach logout button machen in der div
-
                                     $target_dir = "../uploads/"; // directory bats.li/uploads
                                     $target_folder = generateRandomString(8) . "/"; // unique individual folder for each upload
                                     $target_name = basename($_FILES["fileToUpload"]["name"]); // file name from uploaded file
@@ -73,7 +71,9 @@
                                         echo "<a style='font-size: 20px' href='" . $url . "'> " . $url . "</a>";
                                         echo "<br><br>";
                                     } else {
+                                        rmdir($target_dir . $target_folder); // if file upload failed, remove the created folder to prevent empty folder spamming
                                         echo "Sorry, there was an error uploading your file. <br>";
+                                        
                                     }
                                 }
 

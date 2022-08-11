@@ -17,8 +17,8 @@
 
         <center>
             <div style="padding-top: 150px; height: 59%">
-                <a class="boldfont" style="color: #A6B8C8; font-size: 500%;"> Welcome :D</a> <br>
-                <a class="boldfont" style="color: #A6B8C8; font-size: 200%;"> seems pretty empty here, doesn't it? hmm</a> <br>
+                <a class="lowkey-title boldfont" style="font-size: 500%;"> Welcome :D</a> <br>
+                <a class="lowkey-title boldfont" style="font-size: 200%;"> seems pretty empty here, doesn't it? hmm</a> <br>
             </div>
         </center>
 
