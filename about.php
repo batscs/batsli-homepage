@@ -23,7 +23,7 @@
             <div style="width: 900px; padding-bottom: 100px">
 
                 <div style="text-align: left" class="achievements-container">
-                    <a class="boldfont" style="font-size: 200%; color: #202020"> Timeline of Achievements</a>
+                    <a class="boldfont small-title"> Timeline of Achievements</a>
                     <div class="achievements-list">
                         
                         <?php drawAchievement("Bachelor of Computer Science", "fh_wedel.png", "Fachhochschule Wedel", "monochrome_education.png", "Education", " - ", "IN PROGRESS"); ?>

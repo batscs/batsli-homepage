@@ -85,7 +85,7 @@
                     <div id="uploadDiv" style="width: 500px; height: 200px">
                     
                         <br>
-                        <p style="font-size: 28px"> Select image to upload: </p> 
+                        <p class="mainfont" style="font-size: 28px"> Select image to upload: </p> 
                         <br>
                         <input type="file" class="mainfont button" name="fileToUpload" id="fileToUpload">
                         <br> <br> <br>

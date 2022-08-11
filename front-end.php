@@ -19,8 +19,30 @@
 
             <script>
 
+                // default Theme wird gesetzt beim ersten Besuch der Website
+                if (localStorage.getItem("theme") == null) {
+                    localStorage.setItem("theme", "dark");
+                }
+                
+
+                let savedTheme = localStorage.getItem("theme");
+
+                if (savedTheme == "dark") {
+                    document.body.classList.add("dark-mode");
+                } else {
+                    document.body.classList.remove("dark-mode")
+                }
+
                 function toggleDarkMode() {
                     document.body.classList.toggle("dark-mode");
+
+                    if (document.body.classList.contains("dark-mode")) {
+                        // dark mode on
+                        localStorage.setItem("theme", "dark");
+                    } else {
+                        // dark mode off
+                        localStorage.setItem("theme", "light");
+                    }
                 }
 
             </script>
