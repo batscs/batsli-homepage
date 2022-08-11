@@ -34,6 +34,7 @@
 
                         <div style="font-size: 20px; margin-top: 20px;" class="mainfont">
                             <a class="mainfont"> </a> <a href="register" style="text-decoration: none"> Where can I sign up? </a> <br><br>
+                        </div>
 
                 </form>
 

@@ -85,11 +85,26 @@ body {
 }
 
 .navbar-td {
-  width: 200px;
+  width: 120px;
   text-align: center;
   padding: 18px;
   color: white;
   font-size: 28px;
+}
+
+.navbar-td-spacer {
+  background-color: #3C4248;
+  height: 40px; 
+  width: 4px;
+  border-radius: 5px;
+}
+
+.navbar-td-spacer-before {
+  padding-right: 18px;
+}
+
+.navbar-td-spacer-after {
+  padding-left: 15px;
 }
 
 .navbar-td a {

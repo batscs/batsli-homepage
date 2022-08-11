@@ -39,6 +39,7 @@
 
                         <div style="font-size: 20px; margin-top: 20px;" class="mainfont">
                             <a class="mainfont"> </a> <a href="login.php" style="text-decoration: none"> No no, forget it, take me back! </a> <br><br>
+                        </div>
 
                 </form>
 

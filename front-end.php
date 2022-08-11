@@ -7,8 +7,10 @@
                     <tr>
                         <td class="navbar-td"> <a class="boldfont" href="../home">home</a> </td>
                         <td class="navbar-td"> <a class="boldfont" href="work">work</a> </td>
-                        <td class="navbar-td"> <a class="boldfont" href="about">about</a> </td>
-                        <td class="navbar-td"> <a class="boldfont" href="login">login</a> </td>
+                        <td class="navbar-td-spacer-before navbar-td"> <a class="boldfont" href="about">about</a> </td>
+                        <td> <div class="navbar-td-spacer"> </div> </td>
+                        <td class="navbar-td-spacer-after navbar-td"> <a class="boldfont" href="login">login</a> </td>
+                        <td class="navbar-td"> <a class="boldfont" href="upload">upload</a> </td>
                     </tr>
                 </table> </center>
             </div>
