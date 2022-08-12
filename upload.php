@@ -35,7 +35,7 @@
                     }
                 ?>
 
-                <form action="upload.php" method="post" enctype="multipart/form-data">
+                <form action="upload" method="post" enctype="multipart/form-data">
 
                         <?php
 
