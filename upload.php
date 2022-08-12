@@ -174,7 +174,9 @@
             </div>
         </center>
 
-        <?php echo drawFooter(); ?>
+        
     </div>
+
+    <?php echo drawFooter(); ?>
 
 </html>

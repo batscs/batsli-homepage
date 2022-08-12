@@ -65,10 +65,10 @@ html {
   --mainfont: #ffffff;
   --inversefont: #FFFFFF;
   --lowkeyfont: #bebdbd;
-  --heavyfont: #575757;
+  --heavyfont: #434242;
 
   --soft: #202020;
-  --softheavy: #171717;
+  --softheavy: #131313;
   --softvariation: #353535;
   --softhighlight: #282828;
 
@@ -96,13 +96,19 @@ body {
   
 }
 
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .main {
   width: 350px;
   height: 400px;
 
-  margin-bottom: 20px;
-
-  margin: 20px 50px;
+  margin: 20px auto;
+  padding: 0px 15px;
 
   color: var(--mainfont);
 }
@@ -202,13 +208,6 @@ body {
   border-color: var(--highlight);
 }
 
-.flex-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
 .project-filter {
   margin-top: 20px;
 }
@@ -280,13 +279,9 @@ body {
   color: var(--lowkeyfont);
 }
 
-.achievement-card table {
-  color: white;
-}
-
 .achievement-card table td {
   padding: 20px;
-
+  color: var(--inversefont);
   border-right: 4px solid var(--accent);
 }
 
@@ -317,4 +312,5 @@ body {
 .footer-bg p {
   color: var(--accent);
 }
+
 
