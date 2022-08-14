@@ -217,6 +217,7 @@ body {
   display:flex;
 
   justify-content: center;
+  
 }
 
 .filter-btn {
@@ -227,6 +228,7 @@ body {
   text-align: center;
 
   color: var(--mainfont);
+  
 }
 
 .filter-btn:hover{
@@ -237,7 +239,11 @@ body {
 
 .filter-highlight {
   background-color: var(--accent);
-  color: white;
+  
+}
+
+.filter-highlight li {
+  color: var(--inversefont);
 }
 
 .filter-start{
@@ -245,6 +251,7 @@ body {
   border-top-left-radius: 10%;
   border-bottom-left-radius: 10%;
   border-right: 0px;
+  
   }
 
 .filter-middle{

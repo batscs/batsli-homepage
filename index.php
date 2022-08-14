@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="style.css">
         <link rel="icon" href="img/batsli_square.png">
         <title> /home </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
 
     <style>
@@ -39,6 +40,7 @@
         }
 
         .navbar-div {
+            visibility: hidden;
             background-color: transparent;
         }
 
@@ -54,6 +56,35 @@
             color: white;
             transition: 0;
         }
+
+        .index-title {
+            color: white; 
+            font-size: 10em;
+        }
+
+        .index-subtitle {
+            color: white; 
+            font-size: 180%;
+        }
+
+        @media only screen and (max-device-width: 480px) {
+            .index-title {
+                font-size: 5em;
+            } 
+
+            .index-subtitle {
+                font-size: 100%;
+            }
+
+            .index-img {
+                width: 50px;
+            }
+
+            .navbar-div {
+                visibility: hidden;
+            }
+        }
+
     </style>
 
     
@@ -62,17 +93,21 @@
 
         <center>
             <div style="padding-top: 100px;">
-                <a class="lowkey-title boldfont" style="color: white; font-size: 1000%;"> bats</a> <br>
-                <a class="lowkey-title boldfont" style="color: white; font-size: 180%;"> Developer :D</a> <br>
+                <a class="index-title lowkey-title boldfont"> bats</a> <br>
+                <a class="index-subtitle lowkey-title boldfont"> Developer</a> <br>
 
                 <table class="index-table">
                     <tr>
                         <td>
-                            <a href="https://github.com/batscs"> <img class="index-img" src="img/github_white.png"> </a>
+                            <a href="https://github.com/batscs"> <img class="index-img" src="img/index_github.png"> </a>
                         </td>
 
                         <td>
-                            <a href="https://discord.com/users/170264645397905408"> <img class="index-img" src="img/discord_white.png"> </a>
+                            <a href="https://discord.com/users/170264645397905408"> <img class="index-img" src="img/index_discord.png"> </a>
+                        </td>
+
+                        <td>
+                            <a href="work"> <img class="index-img" src="img/index_info.png"> </a>
                         </td>
                         
                     </tr>
