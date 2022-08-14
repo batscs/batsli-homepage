@@ -40,7 +40,7 @@
         }
 
         .navbar-div {
-            visibility: hidden;
+            display: none;
             background-color: transparent;
         }
 
