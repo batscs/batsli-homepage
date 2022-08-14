@@ -49,6 +49,11 @@
         .navbar-td-darkmode {
             visibility: hidden;
         }
+
+        .navbar-td a:hover {
+            color: white;
+            transition: 0;
+        }
     </style>
 
     
