@@ -149,19 +149,22 @@
                     function accessUpload() {
 
                         // validate if access code is correct, if not return and do nothing
-                        if (md5(access_code_input.value) != "b57d2880a2de9ec5c5ef0c89ee2f911e") {
+                        var salt = "z8t0ymze88hra34al6tn28dhemrinbo2";
+                        if (md5(access_code_input.value + salt) != "53f7eafebb97a1fba4f098fa71181c81") {
                             // show the div with the content for upload
-                            //upload_div.style.backgroundColor = "red";
                             upload_div.style.display = "none";
 
-                            // lock the input field so the access code can't be changed anymore, but how??
-                            access_code_input.style.color = "black";
+                            var savedTheme = localStorage.getItem("theme");
+                            if (savedTheme == "light") {
+                                access_code_input.style.color = "black";
+                            } else {
+                                access_code_input.style.color = "white";
+                            }
+                            
                         } else {
                             // show the div with the content for upload
-                            //upload_div.style.backgroundColor = "green";
                             upload_div.style.display = "block";
 
-                            // lock the input field so the access code can't be changed anymore, but how??
                             access_code_input.style.color = "gray";
                         }
                     }
