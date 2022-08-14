@@ -285,6 +285,10 @@ body {
   border-right: 4px solid var(--accent);
 }
 
+.achievement-card table th {
+  color: var(--inversefont);
+}
+
 .achievement-card img {
   border-radius: 5px;;
 }

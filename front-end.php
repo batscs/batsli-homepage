@@ -21,7 +21,7 @@
 
                 // default Theme wird gesetzt beim ersten Besuch der Website
                 if (localStorage.getItem("theme") == null) {
-                    localStorage.setItem("theme", "dark");
+                    localStorage.setItem("theme", "light");
                 }
 
                 let savedTheme = localStorage.getItem("theme");
