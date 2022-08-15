@@ -80,12 +80,13 @@
                             }
                         ?>
 
+                    <p class="input-label"> Access Code </p>
                     <input type="password" class="input mainfont" name="access_code" id="access_code" placeholder="Access Code" oninput="accessUpload()" value="<?php echo $saved_access_code; ?>"> </input>
 
                     <div id="uploadDiv" style="width: 500px; height: 200px">
                     
                         <br>
-                        <p class="mainfont" style="font-size: 28px"> Select image to upload: </p> 
+                        <p class="mainfont" style="font-size: 28px"> Select file to upload: </p> 
                         <br>
                         <input type="file" class="mainfont button" name="fileToUpload" id="fileToUpload">
                         <br> <br> <br>

@@ -24,24 +24,82 @@
         </center>
 
         <center>
-            <div style="padding-top: 50px; height: 550px">
+            <div style="padding-top: 50px; padding-bottom: 50px">
                 <form method="post">
 
-                        <input type="text" class="input mainfont" name="username" placeholder="Username" required><br>
+                    <div>
+                        <p id="multiform-title" class="multiform-title"> Basic Information</p>
+                    </div>
 
-                        <input type="text" class="input mainfont" name="email" placeholder="E-mail" required><br>
+                    <div id="multiform-page-1"> 
+                        <p class="input-label"> Username </p>
+                        <input type="text" class="input mainfont" name="username" required><br>
 
-                        <input type="password" class="input mainfont" name="pw" placeholder="Password" required><br>
+                        <p class="input-label"> E-Mail Address </p>
+                        <input type="text" class="input mainfont" name="email" required><br>
 
-                        <input type="password" class="input mainfont" name="pw2" placeholder="Password (Confirm)" required><br>
+                        <button class="mainfont button" id="reg" name="reg" style="visibility: hidden"> Register </button>
+                    </div>
+
+                        
+                    <div id="multiform-page-2"> 
+                        <p class="input-label"> Pasword </p>
+                        <input type="password" class="input mainfont" name="pw" required><br>
+
+                        <p class="input-label"> Password Confirmation </p>
+                        <input type="password" class="input mainfont" name="pw2" required><br>
 
                         <button type="submit" class="mainfont button" id="reg" name="reg"> Register </button>
+                    </div>
 
-                        <div style="font-size: 20px; margin-top: 20px;" class="mainfont">
-                            <a class="mainfont"> </a> <a href="login.php" style="text-decoration: none"> No no, forget it, take me back! </a> <br><br>
-                        </div>
+                    <div class="multiform-navigation-container">
+                        <a onclick="changePage(-1)" class="multiform-navigation-button"> <div style="display: inline-block; padding-right: 15px"> ᐊ </div> Back </a>
+                        <a onclick="changePage(1)" class="multiform-navigation-button"> Next <div style="display: inline-block; padding-left: 15px"> ᐅ </div> </a>
+                    </div>
+
+
+                    <div style="font-size: 20px; margin-top: 20px;" class="mainfont">
+                        <a class="mainfont"> </a> <a href="login.php" style="text-decoration: none"> No no, forget it, take me back! </a> <br><br>
+                    </div>
 
                 </form>
+
+                <script>
+
+                    var current_page = 1;
+                    var max_page = 2;
+                    var min_page = 1;
+
+                    var title = [];
+                    title[1] = "General Information";
+                    title[2] = "Account Credentials";
+
+                    function changePage(change) {
+
+                        // TODO: before changing page, validate if inputs are correct
+                        // in example: is email in email format for exammple
+                        // how will I do it? No idea, probably lots of arrays and REGEX
+
+                        // adjust the current_page and make sure its not too large or too small
+                        current_page += change;
+                        if (current_page > max_page) current_page = max_page;
+                        if (current_page < min_page) current_page = min_page;
+
+                        // Alle multiform pages werden erstmal deaktiviert
+                        for (let i = min_page; i <= max_page; i++) {
+                            document.getElementById("multiform-page-" + i).style.display = "none";
+                        }
+
+                        // Die gewünschte multiform page wird aktiviert
+                        document.getElementById("multiform-page-" + current_page).style.display = "block";
+
+                        // Title vom Multiform wird aufs gewünschte geändert
+                        document.getElementById("multiform-title").innerHTML = title[current_page];
+                    }
+
+                    changePage(0); // Load the website with the current page | 0 = no change on multiform, just reload
+
+                </script>
 
                 <a style="color: darkred; font-weight: bold"> 
                 <?php

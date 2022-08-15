@@ -42,7 +42,7 @@ html {
 :root {
   
   
-  --highlight: #e84118; 
+  --highlight: #005FED; 
 
   --mainfont: #000000;
   --inversefont: #FFFFFF;
@@ -60,7 +60,7 @@ html {
 }
 
 .dark-mode {
-  --highlight: #e84118; 
+  --highlight: #005FED; 
 
   --mainfont: #ffffff;
   --inversefont: #FFFFFF;
@@ -183,29 +183,85 @@ body {
 }
 
 .input {
-  padding: 4px;
-  margin-bottom: 20px;
+  
+  padding: 10px;
+  margin-bottom: 30px;
 
-  font-size: 28px;
+  font-size: 25px;
+  width: 350px;
 
   outline: 0;
-  background: none;
-  border-width: 0 0 3px;
-  border-color: var(--heavyfont);
+  background-color: var(--softvariation);
+
+
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: var(--lowkeyfont);
 
   color: var(--mainfont);
 }
 
+.input-label {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: left;
+
+  width: 350px;
+  margin-bottom: 10px;
+}
+
 .button {
   width: 350px;
-  font-size: 28px;
-  padding: 2px 0px;
 
-  color: var(--softheavy)
+  font-size: 25px;
+  font-weight: bold;
+
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  color: var(--inversefont);
+  background-color: var(--highlight);
+
+  padding: 12px;
+  border-radius: 5px;
+
+  margin-top: 10px;
+
 }
 
 .input:focus {
   border-color: var(--highlight);
+}
+
+.multiform-navigation-button {
+  padding: 10px 33px;
+  border-radius: 15px;
+
+  font-size: 25px;
+
+  background-color: var(--accent);
+  color: var(--inversefont);
+  cursor: pointer;
+
+  margin: 0px 10px;
+}
+
+.multiform-navigation-button div {
+  color: var(--inversefont);
+}
+
+.multiform-navigation-container {
+  height: 50px;
+  padding-top: 40px;
+}
+
+.multiform-title {
+  font-size: 30px;
+  font-weight: bold;
+
+  margin-bottom: 20px;
 }
 
 .project-filter {

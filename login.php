@@ -26,9 +26,11 @@
             <div style="padding-top: 50px; height: 550px">
                 <form method="post">
 
-                        <input type="text" class="input mainfont" name="username" placeholder="Username" required><br>
+                        <p class="input-label"> Username </p>
+                        <input type="text" class="input mainfont" name="username" required><br>
 
-                        <input type="password" class="input mainfont" name="pw" placeholder="Password" required><br>
+                        <p class="input-label"> Password </p>
+                        <input type="password" class="input mainfont" name="pw" required><br>
 
                         <button type="submit" class="mainfont button" id="login" name="log"> Login </button>
 
