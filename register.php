@@ -28,15 +28,17 @@
                 <form method="post">
 
                     <div>
-                        <p id="multiform-title" class="multiform-title"> Basic Information</p>
+                        <p style="display: none" id="multiform-title" class="multiform-title"> Basic Information</p>
                     </div>
 
                     <div id="multiform-page-1"> 
                         <p class="input-label"> Username </p>
-                        <input type="text" class="input mainfont" name="username" required><br>
+                        <input id="multi_username" type="text" class="input mainfont" name="username" required><br>
+                        <p id="multi_username_output" class="input-output-error"> 4 - 16 chars, A-Z, a-z, 0-9 </p>
 
                         <p class="input-label"> E-Mail Address </p>
-                        <input type="text" class="input mainfont" name="email" required><br>
+                        <input id="multi_email" type="text" class="input mainfont" name="email" required><br>
+                        <p id="multi_email_output" class="input-output-error"> format: email@domain.tld </p>
 
                         <button class="mainfont button" id="reg" name="reg" style="visibility: hidden"> Register </button>
                     </div>
@@ -44,10 +46,12 @@
                         
                     <div id="multiform-page-2"> 
                         <p class="input-label"> Pasword </p>
-                        <input type="password" class="input mainfont" name="pw" required><br>
+                        <input id="multi_password" type="password" class="input mainfont" name="pw" required><br>
+                        <p id="multi_password_output" class="input-output-error"> Requires 8 or more characters </p>
 
                         <p class="input-label"> Password Confirmation </p>
-                        <input type="password" class="input mainfont" name="pw2" required><br>
+                        <input id="multi_password_confirmation" type="password" class="input mainfont" name="pw2" required><br>
+                        <p id="multi_password_confirmation_output" class="input-output-error"> Repeat your Password again for verification </p>
 
                         <button type="submit" class="mainfont button" id="reg" name="reg"> Register </button>
                     </div>
@@ -64,7 +68,7 @@
 
                 </form>
 
-                <script>
+                <script defer>
 
                     var current_page = 1;
                     var max_page = 2;
@@ -74,11 +78,68 @@
                     title[1] = "General Information";
                     title[2] = "Account Credentials";
 
+                    var requirements = [];
+
+                    // this is an example requirement
+                    requirements[0] = [
+                        {
+                            "item_id": "multi_exampleID", 
+                            "regex": "regex_example_for_input", 
+                        }
+                    ];
+
+                    requirements[1] = [
+                        {
+                            "item_id": "multi_username", 
+                            "regex": /^[A-Za-z]{1}[A-Za-z0-9]{3,17}$/
+                        },
+                        {
+                            "item_id": "multi_email", 
+                            "regex": /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+                        }
+                    ];
+
+                    requirements[2] = [
+                        {
+                            "item_id": "multi_password", 
+                            "regex": /^.{8,}$/
+                        },
+                        {
+                            "item_id": "multi_password_confirmation", 
+                            "regex": /^.{8,}$/
+                        }
+                    ];
+
                     function changePage(change) {
 
-                        // TODO: before changing page, validate if inputs are correct
-                        // in example: is email in email format for exammple
-                        // how will I do it? No idea, probably lots of arrays and REGEX
+                        var requirements_test_pass = true; // wird auf false gesetzt falls irgendwas nicht ausgefüllt ist
+
+                        for (let i = 0; i < requirements[current_page].length; i++) {
+
+                            var item_id = requirements[current_page][i]["item_id"];
+                            var item_regex = requirements[current_page][i]["regex"];
+
+                            var item = document.getElementById(item_id);
+                            var output = document.getElementById(item_id + "_output");
+                            var item_value = item.value;
+
+
+                            if (change == 0) {
+                                
+                            } else if (item_value.match(item_regex) == null) {
+                                item.style.borderColor = "#ED0C00"; // red bad
+                                output.style.visibility = "visible"; // not yet implemented
+
+                                requirements_test_pass = false; // prevent switching to next/previous page
+                            } else {
+                                item.style.borderColor = "#059900"; // green correct
+                                output.style.visibility = "hidden"; // not yet implemented
+                            }
+                        }
+
+                        if (!requirements_test_pass) {
+                            return;
+                        }
 
                         // adjust the current_page and make sure its not too large or too small
                         current_page += change;

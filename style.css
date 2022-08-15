@@ -185,7 +185,6 @@ body {
 .input {
   
   padding: 10px;
-  margin-bottom: 30px;
 
   font-size: 25px;
   width: 350px;
@@ -209,6 +208,16 @@ body {
 
   width: 350px;
   margin-bottom: 10px;
+}
+
+.input-output-error {
+  width: 350px;
+  color: #ED0C00;
+  padding-bottom: 20px;
+  text-align: left;
+
+  visibility: hidden;
+  
 }
 
 .button {

@@ -28,9 +28,11 @@
 
                         <p class="input-label"> Username </p>
                         <input type="text" class="input mainfont" name="username" required><br>
+                        <p id="xx" class="input-output-error"> Enter a username </p>
 
                         <p class="input-label"> Password </p>
                         <input type="password" class="input mainfont" name="pw" required><br>
+                        <p id="xx" class="input-output-error"> Enter a password </p>
 
                         <button type="submit" class="mainfont button" id="login" name="log"> Login </button>
 
