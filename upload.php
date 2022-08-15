@@ -81,7 +81,7 @@
                         ?>
 
                     <p class="input-label"> Access Code </p>
-                    <input type="password" class="input mainfont" name="access_code" id="access_code" placeholder="Access Code" oninput="accessUpload()" value="<?php echo $saved_access_code; ?>"> </input>
+                    <input type="password" class="input mainfont" name="access_code" id="access_code" oninput="accessUpload()" value="<?php echo $saved_access_code; ?>"> </input>
 
                     <div id="uploadDiv" style="width: 500px; height: 200px">
                     
