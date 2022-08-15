@@ -55,11 +55,13 @@
 
                 <?php drawCard("Easy Math", "software", $filter,  "Nov 2020",  "A Java program aimed for kids for them to solve basic mathmatical tasks and get results on how well they did", "https://steambats.itch.io/easy-math", "https://github.com/batscs/Easy-Math", "easy-math.png")?>
                 <?php drawCard("Easy Terminal", "software", $filter,  "Oct 2020",  "Simplify your worktime by having Easy-Terminal automate predefined actions for you and let you do a lot of stuff", "https://steambats.itch.io/easy-terminal", "https://github.com/batscs/Easy-Terminal", "easy-terminal.png")?>
-                <?php drawCard("Typing Hell", "software", $filter,  "Oct 2020 - Nov 2020",  "Type Racer Game inspired by Tetris made in Java", "https://steambats.itch.io/Typing-Hell", "https://github.com/batscs/Typing-Hell", "typing-hell.png")?>
+                
+                <?php drawCard("Typing Hell", "software", $filter,  "Oct 2020 - Nov 2020",  "Website for the Typing Hell Java game with a leaderboard integration to compare your stats with others", "https://maxohno.de/typing/leaderboard.php", "https://github.com/batscs/maxohno.de", "maxohno-de.png")?>
+                <?php drawCard("Typing Hell", "software", $filter,  "Oct 2020 - Nov 2020",  "Type Racer Game inspired by Tetris made in Java with online cloud syncing and more!", "https://steambats.itch.io/Typing-Hell", "https://github.com/batscs/Typing-Hell", "typing-hell.png")?>
 
                 <?php drawCard("Nichio KB", "software", $filter,  "Sep 2019 - Oct 2021",  "Nichio Keybinder - A custom made AHK (AutoHotKey) Keybinder for the GTA: SAMP Project \"LiveYourDream-Roleplay\"", "https://nichio.de", "https://github.com/batscs/Nichio-Keybinder-for-GTA-SAMP", "nichio_kb.png")?>
 
-                <?php drawCard("Fireman Game", "software", $filter,  "Sep 2017 - Oct 2017",  "My first Java Game, don't expect too much, or anything at all", "https://github.com/batscs/Fireman", "https://github.com/batscs/Fireman", "fireman.png")?>
+                <?php drawCard("Fireman Game", "software", $filter,  "Sep 2017 - Oct 2017",  "My first Java Game, don't expect too much, or anything at all, has 3 levels and very basic controls + ingame shop", "https://github.com/batscs/Fireman", "https://github.com/batscs/Fireman", "fireman.png")?>
             </div> 
         </center>
 
