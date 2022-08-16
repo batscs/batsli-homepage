@@ -24,11 +24,11 @@
         </center>
 
         <center>
-            <div style="padding-top: 50px; padding-bottom: 50px">
+            <div style="padding-top: 0px; padding-bottom: 50px">
                 <form method="post">
 
                     <div>
-                        <p style="display: none" id="multiform-title" class="multiform-title"> Basic Information</p>
+                        <p id="multiform-title" class="multiform-title"> Basic Information</p>
                     </div>
 
                     <div id="multiform-page-1"> 
@@ -63,7 +63,7 @@
 
 
                     <div style="font-size: 20px; margin-top: 20px;" class="mainfont">
-                        <a class="mainfont"> </a> <a href="login.php" style="text-decoration: none"> No no, forget it, take me back! </a> <br><br>
+                        <a> Nah, forget it. </a> <a href="login" class="subtle-link-text"> Take me back! </a> <br><br>
                     </div>
 
                 </form>
@@ -137,7 +137,7 @@
                             }
                         }
 
-                        if (!requirements_test_pass) {
+                        if (!requirements_test_pass && change > 0) { // change > 0, weil man soll zurückgehen können
                             return;
                         }
 
@@ -155,7 +155,7 @@
                         document.getElementById("multiform-page-" + current_page).style.display = "block";
 
                         // Title vom Multiform wird aufs gewünschte geändert
-                        document.getElementById("multiform-title").innerHTML = title[current_page];
+                        document.getElementById("multiform-title").innerHTML = current_page + "/" + max_page + " - " + title[current_page];
                     }
 
                     changePage(0); // Load the website with the current page | 0 = no change on multiform, just reload

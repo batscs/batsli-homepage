@@ -43,6 +43,8 @@ html {
   
   
   --highlight: #005FED; 
+  --red: #ED0C00;
+  --green: #059900;
 
   --mainfont: #000000;
   --inversefont: #FFFFFF;
@@ -234,10 +236,14 @@ body {
   background-color: var(--highlight);
 
   padding: 12px;
-  border-radius: 5px;
+  border-radius: 25px;
 
   margin-top: 10px;
 
+}
+
+.button:hover {
+  opacity: 0.8;
 }
 
 .input:focus {
@@ -246,15 +252,19 @@ body {
 
 .multiform-navigation-button {
   padding: 10px 33px;
-  border-radius: 15px;
+  border-radius: 25px;
 
   font-size: 25px;
 
-  background-color: var(--accent);
+  background-color: var(--highlight);
   color: var(--inversefont);
   cursor: pointer;
 
   margin: 0px 10px;
+}
+
+.multiform-navigation-button:hover {
+  opacity: 0.8;
 }
 
 .multiform-navigation-button div {
@@ -267,10 +277,20 @@ body {
 }
 
 .multiform-title {
-  font-size: 30px;
+  font-size: 22px;
   font-weight: bold;
+  text-align: left;
 
-  margin-bottom: 20px;
+  color: var(--accent);
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 350px;
+}
+
+.subtle-link-text {
+  color: var(--highlight);
+  text-decoration: none;
 }
 
 .project-filter {

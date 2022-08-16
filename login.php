@@ -37,7 +37,7 @@
                         <button type="submit" class="mainfont button" id="login" name="log"> Login </button>
 
                         <div style="font-size: 20px; margin-top: 20px;" class="mainfont">
-                            <a class="mainfont"> </a> <a href="register" style="text-decoration: none"> Where can I sign up? </a> <br><br>
+                        <a> Hmm, </a> <a href="register" class="subtle-link-text"> where can I sign up? </a> <br><br>
                         </div>
 
                 </form>
