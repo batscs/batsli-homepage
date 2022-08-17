@@ -90,12 +90,24 @@ body {
   height: 100%;
 
   background-color: var(--soft);
+
+  
   
 }
 
 .img {
   cursor: pointer;
+
+  width: 350px; 
+  height: 219px; 
+
+
   
+}
+
+.img:hover {
+  transition: 0.2s;
+  opacity: 0.7;
 }
 
 .flex-container {
@@ -122,6 +134,12 @@ body {
   
 
   background-color: var(--softvariation);
+
+  display: inline-block; 
+  text-align: left; 
+  padding: 10px; 
+  padding-top: 15px; 
+  height: 130px
 }
 
 .cardTitle {
@@ -307,7 +325,7 @@ body {
 
 .filter-btn {
   cursor: pointer;
-  font-size: 20px;
+  font-size: 24px;
 
   border: 2px solid var(--accent);
   text-align: center;
@@ -409,4 +427,81 @@ body {
   color: var(--accent);
 }
 
+.footer-container {
+  width: 500px; 
+  height: 100px; 
+  padding-top: 50px
+}
 
+.mobile {
+  display: none;
+}
+
+@media only screen and (max-device-width: 600px) {
+
+  .mobile {
+    display: block;
+  }
+
+  .pageHeader {
+    font-size: 10vw;
+  }
+
+  .filter-btn {
+    font-size: 4.3vw;
+    width: max-content;
+  }
+
+  .filter-container {
+    
+  }
+
+  .main {
+    margin: 0 auto;
+    padding: 0;
+
+    width: 100%;
+  }
+
+  .main-text {
+    padding: 15px;
+  }
+
+  .img {
+    
+    
+    width: 100vw;
+    height: calc(100vw * 0.63);
+    object-fit: cover;
+    overflow: hidden;
+    
+  }
+
+  .main {
+    height: 100%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+
+  .navbar-div {
+    min-width: min-content;
+    height: fit-content;
+    padding: 10px 0px;
+  }
+
+  .navbar-td {
+    font-size: 4vw;
+    width: 20vw;
+    padding: 5px;
+  }
+
+  .footer-container {
+    max-width: 100vw;
+  }
+
+  .navbar-td-spacer {
+    width: 2px;
+    height: 25px;
+  }
+
+}

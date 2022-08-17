@@ -22,39 +22,13 @@
             background-image: url("img/index_temp.png");
             background-repeat: no-repeat;
             background-size: cover;
-            aspect-ratio: 960/300;
             width: 100%;
+            
             
         }
 
         .index-img {
-            width: 80px;
-        }
-
-        .index-table {
-            padding-top: 150px;
-        }
-
-        .index-table td {
-            padding: 20px;
-        }
-
-        .navbar-div {
-            display: none;
-            background-color: transparent;
-        }
-
-        .navbar-td-spacer {
-            background-color: #E0E0E0;
-        }
-
-        .navbar-td-darkmode {
-            visibility: hidden;
-        }
-
-        .navbar-td a:hover {
-            color: white;
-            transition: 0;
+            width: 70px;
         }
 
         .index-title {
@@ -67,28 +41,47 @@
             font-size: 180%;
         }
 
+        .index-flex-links {
+            margin-top: 120px;
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            width: 100%;
+            max-width: 300px;
+        }
+
         @media only screen and (max-device-width: 480px) {
             .index-title {
-                font-size: 5em;
+                font-size: 30vw;
             } 
 
             .index-subtitle {
-                font-size: 100%;
-            }
+                font-size: 5vw;
+           }
 
             .index-img {
-                width: 50px;
+                width: 60px;
             }
 
-            .navbar-div {
-                visibility: hidden;
+            .index-flex-links {
+                flex-direction: column;    
+                margin-top: 70px;            
+
             }
+
+            .index-flex-links a {
+                margin-bottom: 30px;
+            }
+
+            
         }
 
     </style>
 
     
-    <?php drawNavbar(); ?>
     <div style="width: 100%; height: 85%">
 
         <center>
@@ -96,22 +89,12 @@
                 <a class="index-title lowkey-title boldfont"> bats</a> <br>
                 <a class="index-subtitle lowkey-title boldfont"> Developer</a> <br>
 
-                <table class="index-table">
-                    <tr>
-                        <td>
-                            <a href="https://github.com/batscs"> <img class="index-img" src="img/index_github.png"> </a>
-                        </td>
+                <div class="index-flex-links">
+                    <a href="/work"> <img class="index-img" src="img/index_info.png"> </a>
+                    <a href="https://github.com/batscs"> <img class="index-img" src="img/index_github.png"> </a>
+                    <a href="https://discord.com/users/170264645397905408"> <img class="index-img" src="img/index_discord.png"> </a>
+                </div>
 
-                        <td>
-                            <a href="https://discord.com/users/170264645397905408"> <img class="index-img" src="img/index_discord.png"> </a>
-                        </td>
-
-                        <td>
-                            <a href="work"> <img class="index-img" src="img/index_info.png"> </a>
-                        </td>
-                        
-                    </tr>
-                </table>
             </div>
         </center>
 

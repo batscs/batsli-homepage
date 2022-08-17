@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="style.css">
         <link rel="icon" href="img/batsli_square.png">
         <title> /home/upload </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
 
     
@@ -83,7 +84,7 @@
                     <p class="input-label"> Access Code </p>
                     <input type="password" class="input mainfont" name="access_code" id="access_code" oninput="accessUpload()" value="<?php echo $saved_access_code; ?>"> </input>
 
-                    <div id="uploadDiv" style="width: 500px; height: 200px">
+                    <div id="uploadDiv" style="width: 100%; max-width: 500px; height: 200px">
                     
                         <br>
                         <p class="mainfont" style="font-size: 28px"> Select file to upload: </p> 

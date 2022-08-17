@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="style.css">
         <link rel="icon" href="img/batsli_square.png">
         <title> /home/login </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
 
     

@@ -58,9 +58,9 @@
     function drawFooter() {
         ?>
             <center class="footer-bg">
-                <footer class="footer-container" style="width: 500px; height: 100px; padding-top: 50px">
+                <footer class="footer-container" style="">
                     <p style="font-size: 22px"> designed and built by <a class="boldfont"> bats </a> </p>
-                    <p style="font-size: 20px"> contact<a class="boldfont">@bats.li</a> </p>
+                    <p style="font-size: 20px"> contact@<a class="boldfont">bats.li</a> </p>
                 </footer>
             </center>
         <?php
@@ -111,9 +111,9 @@
         }
         ?>
             <div class="main"> 
-                <div class="img" onclick="cardClick('<?php echo $website; ?>')" style="width: 350px; height: 219px; background-image: url('img/projects/<?php echo $imgurl;?>'); background-size: 100% 100%;"> </div>
+                <div class="img" onclick="cardClick('<?php echo $website; ?>')" style="background-image: url('img/projects/<?php echo $imgurl;?>'); background-size: 100% 100%;"> </div>
 
-                <div class="main-text" style="display: inline-block; text-align: left; padding: 10px; padding-top: 15px; height: 130px"> 
+                <div class="main-text" style=""> 
                     
                     <?php if ($github != "-1") {
                         ?>

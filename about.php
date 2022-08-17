@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="style.css">
         <link rel="icon" href="img/batsli_square.png">
         <title> /home/about </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
 
     
@@ -20,8 +21,11 @@
                 <?php echo customText("about", "pageHeader"); ?>
             </div>
 
+            <a style="font-size: 40px"> coming soon™ </a>
+
             <div style="width: 900px; padding-bottom: 100px">
 
+                <!--
                 <div style="text-align: left" class="achievements-container">
                     <a class="boldfont small-title"> Timeline of Achievements</a>
                     <div class="achievements-list">
@@ -37,6 +41,7 @@
                         
                     </div>
                 </div>
+                -->
             </div>
 
             

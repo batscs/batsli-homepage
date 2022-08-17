@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="style.css">
         <link rel="icon" href="img/batsli_square.png">
         <title> /home/work </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
 
     
@@ -42,7 +43,7 @@
                 </ul>
             </div>
 
-            <div class="flex-container" style="width: 90%; max-width: 1250px; margin-top: 20px; margin-bottom: 55px;">
+            <div class="flex-container" style="max-width: 1250px; margin-top: 20px; margin-bottom: 55px;">
 
                 <?php drawCard("Homepage", "webdev", $filter, "Jul 2022 - Aug 2022",  "The website you are currently visiting with the purpose to have a landing page for my website and show off my work", "https://mrg.bats.li", "https://github.com/batscs/batsli-homepage", "bats-home.png")?>
                 <?php drawCard("MRG-Tests", "webdev", $filter, "Feb 2022 - Jun 2022",  "A school project made for verifying if a student has a valid test result by the teacher by scanning a QR-Code", "https://mrg.bats.li", "https://github.com/batscs/MRG-Tests", "mrg_tests.png")?>
