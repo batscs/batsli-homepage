@@ -90,7 +90,7 @@
                 <a class="index-subtitle lowkey-title boldfont"> Developer</a> <br>
 
                 <div class="index-flex-links">
-                    <a href="/work"> <img class="index-img" src="img/index_info.png"> </a>
+                    <a href="work"> <img class="index-img" src="img/index_info.png"> </a>
                     <a href="https://github.com/batscs"> <img class="index-img" src="img/index_github.png"> </a>
                     <a href="https://discord.com/users/170264645397905408"> <img class="index-img" src="img/index_discord.png"> </a>
                 </div>
