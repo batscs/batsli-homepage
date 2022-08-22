@@ -20,7 +20,7 @@
 
         <center>
             <div style="padding-top: 30px">
-                <?php echo customText("register", "pageHeader"); ?>
+                <?php echo customText("Register", "pageHeader"); ?>
             </div>
         </center>
 

@@ -29,6 +29,7 @@
 
         .index-img {
             width: 70px;
+            
         }
 
         .index-title {
@@ -39,6 +40,32 @@
         .index-subtitle {
             color: white; 
             font-size: 180%;
+            text-decoration: none;
+        }
+
+        .subTitleIMG {
+            padding-top: 7px;
+            height: 30px;
+            padding-left: 20px;
+        }
+
+        .index-href-button {
+            cursor: pointer;
+            font-weight: bold;
+
+            padding: 10px;
+            border: 4px solid white;
+            border-radius: 8px;
+
+            background-color: rgba(255,255,255, 1);
+            font-weight: bold;
+            color: black;
+
+            text-decoration: none;
+        }
+
+        .index-href-button-container {
+            padding-top: 60px;
         }
 
         .index-flex-links {
@@ -50,7 +77,16 @@
             justify-content: space-between;
 
             width: 100%;
-            max-width: 300px;
+            max-width: 340px;
+        }
+
+        #siteContainer {
+            
+        }
+
+        #centeredSiteContainer {
+            padding-top: 100px;
+            
         }
 
         @media only screen and (max-device-width: 480px) {
@@ -60,20 +96,45 @@
 
             .index-subtitle {
                 font-size: 5vw;
+                padding-left: 5vw;
            }
 
+           .subTitleIMG {
+                padding-top: 3px;
+                height: 24px;
+                padding-left: 20px;
+            }
+
             .index-img {
-                width: 60px;
+                width: 50px;
+                padding: 10px;
             }
 
             .index-flex-links {
                 flex-direction: column;    
+                justify-content: center;
                 margin-top: 70px;            
 
             }
 
             .index-flex-links a {
-                margin-bottom: 30px;
+                margin-bottom: 40px;
+            }
+
+            .index-href-button-container {
+                padding-top: 50px;
+            }
+
+            #siteContainer {
+                margin: 0 auto;
+            }
+
+            #centeredSiteContainer {
+                padding-top: 50px;
+                width: max-content;
+                margin: 0 auto;
+                text-align: center;
+                
             }
 
             
@@ -82,12 +143,18 @@
     </style>
 
     
-    <div style="width: 100%; height: 85%">
+    <div id="siteContainer" style=";">
 
         <center>
-            <div style="padding-top: 100px;">
-                <a class="index-title lowkey-title boldfont"> bats</a> <br>
-                <a class="index-subtitle lowkey-title boldfont"> Developer</a> <br>
+            <div id="centeredSiteContainer" style="">
+
+                <a style="font-family: BostonBold" class="index-title lowkey-title boldfont"> bats</a> <br>
+
+                <div style="display: flex; width: max-content"> 
+                    
+                    <a href="about" class="index-subtitle lowkey-title boldfont" style="cursor: pointer"> Developer </a> 
+
+                </div>
 
                 <div class="index-flex-links">
                     <a href="work"> <img class="index-img" src="img/index_info.png"> </a>

@@ -5,13 +5,14 @@
             <div class="navbar-div" style="">
                 <center> <table style="float: center">
                     <tr>
-                        <td onclick="toggleDarkMode()" class="navbar-td-darkmode navbar-td"> <img id="dark-mode-img" src="img/dark_mode_on.png" style="width: 40px"> </td>
-                        <td class="navbar-td"> <a class="boldfont" href="../home">home</a> </td>
-                        <td class="navbar-td"> <a class="boldfont" href="work">work</a> </td>
-                        <td class="navbar-td-spacer-before navbar-td"> <a class="boldfont" href="about">about</a> </td>
-                        <td> <div class="navbar-td-spacer"> </div> </td>
-                        <td class="navbar-td-spacer-after navbar-td"> <a class="boldfont" href="login">login</a> </td>
-                        <td class="navbar-td"> <a class="boldfont" href="upload">upload</a> </td>
+                        <td onclick="toggleDarkMode()" class="navbar-td-darkmode navbar-td"> <img id="dark-mode-img" src="img/dark_mode_on.png"> </td>
+                        <td class="navbar-td"> <a class="boldfont" href="../home">Home</a> </td>
+                        <td class="navbar-td"> <a class="boldfont" href="work">Work</a> </td>
+                        <td class="navbar-td-spacer-before navbar-td"> <a class="boldfont" href="about"> Information </a> </td>
+                        <td> <div class="desktop navbar-td-spacer"> </div> </td>
+                        <td style="width: max-content" class="mobile navbar-td"> <a class="boldfont" href="#otherLinks"> ></a> </td>
+                        <td class="navbar-td-spacer-after navbar-td"> <a class="boldfont" href="login">Login</a> </td>
+                        <td id="otherLinks" class="navbar-td"> <a class="boldfont" href="upload">Upload</a> </td>
                         <div class="dark-mode"> </div>
                     </tr>
                 </table> </center>
@@ -72,6 +73,7 @@
 
         if ($type == "pageHeader") {
             $output = "<div class='pageHeaderSlash pageHeader boldfont'>/</div>" . "<div class='pageHeaderPrefix pageHeader boldfont'>home</div>" . "<div class='pageHeaderSlash pageHeader boldfont'>/</div>" . "<div class='pageHeader boldfont'>" .  $text . "</div>";
+            $output = "<div class='pageHeader boldfont'>" .  $text . "</div>";
         }
 
         return $output;
@@ -104,11 +106,13 @@
         <?php
     }
 
-    function drawCard($card = "Example", $thisCategory, $setCategory, $date, $desc = "", $website = "https://steambats.itch.io/Typing-Hell", $github = "-1", $imgurl = "typing-hell.jpg") {
+    function drawCard($card = "Example", $thisCategory, $selectedCategory, $date, $desc = "", $website = "https://steambats.itch.io/Typing-Hell", $github = "-1", $imgurl = "typing-hell.jpg") {
 
-        if ($thisCategory != $setCategory && $setCategory != "all") {
+        
+        if (!in_array($selectedCategory, $thisCategory)) {
             return;
         }
+
         ?>
             <div class="main"> 
                 <div class="img" onclick="cardClick('<?php echo $website; ?>')" style="background-image: url('img/projects/<?php echo $imgurl;?>'); background-size: 100% 100%;"> </div>

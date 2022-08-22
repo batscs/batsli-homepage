@@ -19,7 +19,7 @@
 
         <center>
             <div style="padding-top: 30px">
-                <?php echo customText("login", "pageHeader"); ?>
+                <?php echo customText("Login", "pageHeader"); ?>
             </div>
         </center>
 

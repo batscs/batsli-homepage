@@ -22,7 +22,7 @@
 
         <center>
             <div style="padding-top: 30px">
-                <?php echo customText("upload", "pageHeader"); ?>
+                <?php echo customText("File Upload", "pageHeader"); ?>
             </div>
         </center>
 

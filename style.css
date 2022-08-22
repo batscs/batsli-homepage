@@ -9,6 +9,16 @@
 }
 
 @font-face {
+  font-family: SFUIRegular; /* CAN BE ANYTHING YOU WANT */
+  src: url("../font/SFUI/SFUIText-Regular.ttf");
+}
+
+@font-face {
+  font-family: SFUIBold; /* CAN BE ANYTHING YOU WANT */
+  src: url("../font/SFUI/SFUIText-Bold.ttf");
+}
+
+@font-face {
   font-family: FuturaBold; /* CAN BE ANYTHING YOU WANT */
   src: url("../font/Futura/futura medium condensed bt.ttf");
 }
@@ -23,8 +33,10 @@
   src: url("../font/Rockwell/rockb.ttf");
 }
 
+
+
 .boldfont {
-  font-family: BostonBold;
+  font-family: SFUIBold;
 }
 
 html {
@@ -35,7 +47,7 @@ html {
 * {
   margin: 0;
   padding: 0;
-  font-family: BostonRegular;
+  font-family: SFUIRegular;
   color: var(--mainfont);
 }
 
@@ -47,12 +59,13 @@ html {
   --green: #059900;
 
   --mainfont: #000000;
+  --lowcontrastfont: #000000;
   --inversefont: #FFFFFF;
   --lowkeyfont: #7D96AB;
   --heavyfont: #161F28;
 
-  --soft: #f8f8ff;
-  --softheavy: #161F27;
+  --soft: #EEEEEE;
+  --softheavy: #24252A;
   --softvariation: #FCFCFC;
   --softhighlight: #EFEFEF;
 
@@ -65,13 +78,14 @@ html {
   --highlight: #005FED; 
 
   --mainfont: #ffffff;
+  --lowcontrastfont: #F0F0F0;
   --inversefont: #FFFFFF;
   --lowkeyfont: #bebdbd;
   --heavyfont: #434242;
 
-  --soft: #202020;
-  --softheavy: #131313;
-  --softvariation: #353535;
+  --soft: #2D2D2D;
+  --softheavy: #1E1E1E;
+  --softvariation: #3A3A3A;
   --softhighlight: #282828;
 
   --accent: #686868;
@@ -119,18 +133,21 @@ body {
 
 .main {
   width: 350px;
-  height: 400px;
+  height: max-content;
 
   margin: 20px auto;
-  padding: 0px 15px;
+  padding: 0px 0px;
 
   color: var(--mainfont);
+
+  background-color: black;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 .main-text {
-  border-bottom: 4px solid var(--softhighlight);
+  /* border-bottom: 4px solid var(--softhighlight);
   border-right: 4px solid var(--softhighlight);
-  border-left: 2px solid var(--softhighlight);
+  border-left: 2px solid var(--softhighlight); */
   
 
   background-color: var(--softvariation);
@@ -167,7 +184,6 @@ body {
   width: 120px;
   text-align: center;
   padding: 18px;
-  color: var(--inversefont);
   font-size: 28px;
 }
 
@@ -175,6 +191,10 @@ body {
   width: 40px;
   padding: 0;
   cursor: pointer;
+}
+
+.navbar-td-darkmode img {
+  width: 40px;
 }
 
 .navbar-td-spacer {
@@ -312,7 +332,8 @@ body {
 }
 
 .project-filter {
-  margin-top: 20px;
+  margin-top: 50px;
+  padding-bottom: 50px;
 }
 
 .filter-container {
@@ -335,9 +356,12 @@ body {
 }
 
 .filter-btn:hover{
-  color: var(--soft);
-  background: var(--lowkeyfont);
+  background: var(--softheavy);
   
+}
+
+.filter-btn:hover li {
+  color: var(--inversefont);
 }
 
 .filter-highlight {
@@ -405,7 +429,7 @@ body {
 
 .pageHeader {
   display: inline-block;
-  color: var(--lowkeyfont); 
+  color: var(--lowcontrastfont); 
   font-size: 400%;
 }
 
@@ -420,7 +444,7 @@ body {
 }
 
 .footer-bg {
-  background-color: var(--softhighlight);
+  background-color: var(--softvariation);
 }
 
 .footer-bg p {
@@ -437,14 +461,42 @@ body {
   display: none;
 }
 
+.desktop {
+  display: block;
+}
+
+.aboutTitle {
+  text-align: left;
+  font-size: 25px;
+  font-weight: bold;
+
+  padding-top: 10vh;
+}
+
+.aboutParagraph {
+  text-align: left;
+  font-size: 20px;
+
+  padding-bottom: 10vh;
+}
+
+.aboutSection {
+  height: max-content;
+  padding: 0 30px;
+}
+
 @media only screen and (max-device-width: 600px) {
 
   .mobile {
     display: block;
   }
 
+  .desktop {
+    display: none;
+  }
+
   .pageHeader {
-    font-size: 10vw;
+    font-size: 8.5vw;
   }
 
   .filter-btn {
@@ -452,15 +504,16 @@ body {
     width: max-content;
   }
 
-  .filter-container {
-    
-  }
-
   .main {
     margin: 0 auto;
     padding: 0;
 
     width: 100%;
+
+    height: 100%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+
   }
 
   .main-text {
@@ -477,22 +530,26 @@ body {
     
   }
 
-  .main {
-    height: 100%;
-    margin-bottom: 30px;
-    margin-top: 30px;
+  .navbar-div {
+    
+    height: fit-content;
+    padding: 15px 0px;
+    position: fixed;
+
+    overflow-x: auto;
+
   }
 
-  .navbar-div {
-    min-width: min-content;
-    height: fit-content;
-    padding: 10px 0px;
+  .navbar-td-darkmode img {
+    width: 20px;
   }
 
   .navbar-td {
-    font-size: 4vw;
+    font-size: 5vw;
     width: 20vw;
-    padding: 5px;
+    padding: 5px 10px;
+
+    white-space: nowrap;
   }
 
   .footer-container {
@@ -502,6 +559,22 @@ body {
   .navbar-td-spacer {
     width: 2px;
     height: 25px;
+  }
+
+  .pageHeader {
+    margin-top: 60px;
+  }
+
+  .input, .input-label, .input-output-error, .button, .multiform-title {
+    width: 300px;
+  }
+
+  .multiform-navigation-button {
+    font-size: 18px;
+  }
+
+  .project-filter {
+    padding-bottom: 25px;
   }
 
 }
