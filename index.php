@@ -19,34 +19,42 @@
         }
 
         body {
+            /*
             background-image: url("img/index_temp.png");
             background-repeat: no-repeat;
             background-size: cover;
+            */
+            background-color: #F0F2F5;
+            
             width: 100%;
             
             
         }
 
         .index-img {
-            width: 70px;
-            
+            width: 2vw;
+            margin-right: 1.5vw;
         }
 
         .index-title {
-            color: white; 
-            font-size: 10em;
+            color: #515369; 
+            font-size: 7vw;
         }
 
         .index-subtitle {
-            color: white; 
-            font-size: 180%;
+            color: #797B8C; 
+            font-size: 1.35vw;
             text-decoration: none;
         }
 
-        .subTitleIMG {
-            padding-top: 7px;
-            height: 30px;
-            padding-left: 20px;
+        .index-description {
+            color: #797B8C;
+            overflow-wrap: break-word;
+            width: 20vw;
+            max-width: 62vw;
+
+            font-size: 1.1vw;
+            margin-top: 1vw;
         }
 
         .index-href-button {
@@ -69,12 +77,12 @@
         }
 
         .index-flex-links {
-            margin-top: 120px;
+            margin-top: 70px;
 
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: left;
 
             width: 100%;
             max-width: 340px;
@@ -85,18 +93,73 @@
         }
 
         #centeredSiteContainer {
-            padding-top: 100px;
-            
+            padding-top: 2vw;
+            padding-bottom: 12vw;
+
+            padding-left: 4vw;
+            padding-right: 4vw;
+
+            margin-top: 50px;
+
+            background-color: white;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+            width: 20vw;
+
+            max-height: 550px;
+
+            text-align: left;
+
+        }
+
+        .index-call2action {
+            background-color: #515369;
+            color: white;
+            padding: 15px;
+            border-radius: 7px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 1.2vw;
+
+            margin-top: 50px;
+
+            transition: 0.2s;
+        }
+
+        .index-call2action:hover {
+            transition: 0.2s;
+            background-color: #2F314F;
+        }
+
+        .index-secondaryAction {
+            background-color: #3F3F3F;
+            color: white;
+            margin-top: 30px;
+        }
+
+        .index-secondaryAction:hover {
+            background-color: #202020;
         }
 
         @media only screen and (max-device-width: 480px) {
+
             .index-title {
-                font-size: 30vw;
+                font-size: 17vw;
             } 
 
             .index-subtitle {
                 font-size: 5vw;
-                padding-left: 5vw;
+           }
+
+           .index-description {
+                font-size: 4vw;
+                width: 63vw;
+                margin-top: 4vw;
+           }
+
+           .index-call2action {
+                font-size: 4vw;
+                margin-top: 8vw;
            }
 
            .subTitleIMG {
@@ -106,14 +169,15 @@
             }
 
             .index-img {
-                width: 50px;
-                padding: 10px;
+                width: 35px;
+                margin-right: 20px;
+                margin-left: 3px;
             }
 
             .index-flex-links {
-                flex-direction: column;    
-                justify-content: center;
-                margin-top: 70px;            
+                flex-direction: row;    
+                justify-content: left;
+                margin-top: 35px;            
 
             }
 
@@ -130,10 +194,17 @@
             }
 
             #centeredSiteContainer {
-                padding-top: 50px;
-                width: max-content;
+
+
                 margin: 0 auto;
-                text-align: center;
+                margin-top: 30px;
+
+                width: 65vw;
+
+                height: 70vh;
+                max-height: 500px;
+                
+                padding: 50px;
                 
             }
 
@@ -150,14 +221,19 @@
 
                 <a style="font-family: BostonBold" class="index-title lowkey-title boldfont"> bats</a> <br>
 
-                <div style="display: flex; width: max-content"> 
+                <div style="display: flex; width: max-content; flex-direction: column"> 
                     
-                    <a href="about" class="index-subtitle lowkey-title boldfont" style="cursor: pointer"> Developer </a> 
+                    <a href="about" class="index-subtitle lowkey-title boldfont" style="cursor: pointer"> Full Stack Developer </a> 
+
+                    <a class="index-description"> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren. </a>
+
+                    <a href="work" class="index-call2action"> Check out my work </a>
+                    <a href="about" class="index-secondaryAction index-call2action"> Learn more about me </a>
 
                 </div>
 
                 <div class="index-flex-links">
-                    <a href="work"> <img class="index-img" src="img/index_info.png"> </a>
+                    <a href="mailto:contact@bats.li"> <img class="index-img" src="img/index_email.png"> </a>
                     <a href="https://github.com/batscs"> <img class="index-img" src="img/index_github.png"> </a>
                     <a href="https://discord.com/users/170264645397905408"> <img class="index-img" src="img/index_discord.png"> </a>
                 </div>
