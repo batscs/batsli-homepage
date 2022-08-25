@@ -8,7 +8,8 @@
                         <td onclick="toggleDarkMode()" class="navbar-td-darkmode navbar-td"> <img id="dark-mode-img" src="img/dark_mode_on.png"> </td>
                         <td class="navbar-td"> <a class="boldfont" href="../home">Home</a> </td>
                         <td class="navbar-td"> <a class="boldfont" href="work">Work</a> </td>
-                        <td class="navbar-td-spacer-before navbar-td"> <a class="boldfont" href="about"> Information </a> </td>
+                        <td class="navbar-td"> <a class="boldfont" href="about">About</a> </td>
+                        <td class="navbar-td-spacer-before navbar-td"> <a class="boldfont" href="about#contact"> Contact </a> </td>
                         <td> <div class="desktop navbar-td-spacer"> </div> </td>
                         <td style="width: max-content" class="mobile navbar-td"> <a class="boldfont" href="#otherLinks"> ></a> </td>
                         <td class="navbar-td-spacer-after navbar-td"> <a class="boldfont" href="login">Login</a> </td>
@@ -115,13 +116,14 @@
 
         ?>
             <div class="main"> 
+                <a onclick="cardClick('<?php echo $website; ?>')" class="imgTXT"> ➜ </a>
                 <div class="img" onclick="cardClick('<?php echo $website; ?>')" style="background-image: url('img/projects/<?php echo $imgurl;?>'); background-size: 100% 100%;"> </div>
 
                 <div class="main-text" style=""> 
                     
                     <?php if ($github != "-1") {
                         ?>
-                            <div class="img" onclick="cardClick('<?php echo $github; ?>')" style="display: inline-block; margin-top: 0px; margin-right: 5px; width: 18px; height: 18px; background-image: url('img/github.png'); background-size: 100% 100%;"> 
+                            <div class="img" onclick="cardClick('<?php echo $github; ?>')" style="display: inline-block; margin-top: 0px; margin-right: 5px; width: 16px; height: 16px; background-image: url('img/github.png'); background-size: 100% 100%;"> 
 
                             </div>
                         <?php

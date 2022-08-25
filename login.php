@@ -24,7 +24,7 @@
         </center>
 
         <center>
-            <div style="padding-top: 50px; height: 550px">
+            <div style="padding-top: 50px; height: 600px">
                 <form method="post">
 
                         <p class="input-label"> Username </p>

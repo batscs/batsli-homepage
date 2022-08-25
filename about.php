@@ -44,7 +44,7 @@
                 <p class="aboutParagraph"> Tempor qui in anim eiusmod Lorem nostrud deserunt occaecat ullamco nostrud elit et culpa. Ex reprehenderit nisi esse magna commodo. Aute dolore ipsum esse sint deserunt qui eu consequat laboris duis tempor enim laboris. Enim culpa non officia officia est ut minim fugiat reprehenderit elit ipsum do veniam ipsum. Consectetur eiusmod sunt deserunt tempor. Duis nostrud ad tempor esse irure culpa est cupidatat eiusmod cupidatat proident minim. Laboris voluptate qui duis veniam non fugiat ea esse exercitation occaecat. </p>
                 </section>
 
-                <section class="aboutSection">
+                <section id="contact" class="aboutSection">
                 <p class="aboutTitle"> Contact </p>
                 <p class="aboutParagraph"> Dolore culpa officia nostrud Lorem fugiat non magna. Labore voluptate consequat sint consectetur. Labore deserunt aliquip commodo incididunt veniam incididunt anim et elit non consequat. Ea laborum sunt et sint elit in. Eiusmod non id sint nulla cillum enim. Magna anim magna eu adipisicing eu est sunt. Sunt laboris laborum dolore aliqua excepteur. </p>
                 </section>

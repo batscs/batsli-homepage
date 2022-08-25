@@ -54,6 +54,7 @@
             max-width: 62vw;
 
             font-size: 1.1vw;
+
             margin-top: 1vw;
         }
 
@@ -77,7 +78,7 @@
         }
 
         .index-flex-links {
-            margin-top: 70px;
+            margin-top: 4vw;
 
             display: flex;
             flex-direction: row;
@@ -89,24 +90,23 @@
         }
 
         #siteContainer {
-            
+            padding-top: 3vw;
         }
 
         #centeredSiteContainer {
-            padding-top: 2vw;
+            padding-top: 1vw;
             padding-bottom: 12vw;
 
             padding-left: 4vw;
             padding-right: 4vw;
 
-            margin-top: 50px;
-
             background-color: white;
             box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            border-radius: 7px;
 
             width: 20vw;
 
-            max-height: 550px;
+            max-height: 29vw;
 
             text-align: left;
 
@@ -121,9 +121,11 @@
             text-align: center;
             font-size: 1.2vw;
 
-            margin-top: 50px;
+            margin-top: 3vw;
 
             transition: 0.2s;
+
+            font-weight: bold;
         }
 
         .index-call2action:hover {
@@ -132,9 +134,9 @@
         }
 
         .index-secondaryAction {
-            background-color: #3F3F3F;
+            background-color: #333333;
             color: white;
-            margin-top: 30px;
+            margin-top: 2vw;
         }
 
         .index-secondaryAction:hover {
