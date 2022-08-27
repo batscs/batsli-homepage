@@ -107,12 +107,19 @@
         <?php
     }
 
-    function drawCard($card = "Example", $thisCategory, $selectedCategory, $date, $desc = "", $website = "https://steambats.itch.io/Typing-Hell", $github = "-1", $imgurl = "typing-hell.jpg") {
+    function drawCard($card = "Example", $usedLangs, $thisCategory, $selectedCategory, $date, $desc = "", $website = "https://steambats.itch.io/Typing-Hell", $github = "-1", $imgurl = "typing-hell.jpg") {
 
-        
-        if (!in_array($selectedCategory, $thisCategory)) {
+        if (!in_array($selectedCategory, $thisCategory) && $selectedCategory != "all") {
             return;
         }
+
+        $defaultIconPath = "img/languages/";
+
+        $availableLangs = array(
+            "javascript" => $defaultIconPath . "javascript.png",
+            "html" => $defaultIconPath . "html.png",
+            "css" => $defaultIconPath . "css.png",
+        );
 
         ?>
             <div class="main"> 
@@ -131,9 +138,19 @@
                     ?>
                     <a style="" class="boldfont cardTitle"> <?php echo $card ?> </a> 
 
-                    <a style="" class="boldfont cardDate cardTitle"> <?php echo $date ?> </a> 
+                    <a style="" class="cardDate cardTitle"> <?php echo $date ?> </a> 
                     <br> <br>
-                    <a style="" class="cardText"> <?php echo $desc ?> </a>
+                    <div class="cardText"> <?php echo $desc ?> </div>
+                    <br>
+                    <div class="cardLanguages"> 
+                        <?php
+                            foreach ($usedLangs as $lang) {
+                                /* ?> <img title="<?php echo $lang;?>" style="width: 35px" src="<?php echo $availableLangs[$lang]; ?>"> <?php */
+                                ?> <a class="cardLangText" > <?php echo $lang; ?></a> <?php
+                            }
+                        ?>
+                    </div>
+                    
                 </div>
 
             </div>

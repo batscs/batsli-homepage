@@ -10,10 +10,10 @@
         <title> /home </title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta content="bats.li" property="og:title" />
-        <meta content="Elit est quis ea id. Nulla consectetur do ut magna magna aliquip labore." property="og:description" />
+        <meta content="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua." property="og:description" />
         <meta content="https://bats.li/home" property="og:url" />
         <meta content="https://bats.li/home/img/index_thumbnail.png" property="og:image" />
-        <meta content="#43B581" data-react-helmet="true" name="theme-color" />
+        <meta content="#515369" data-react-helmet="true" name="theme-color" />
         <meta name="twitter:card" content="summary_large_image">
     </head>
 

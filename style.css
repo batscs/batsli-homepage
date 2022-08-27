@@ -131,7 +131,6 @@ body {
 }
 
 .imgTXT {
-  color: white;
   position: absolute;
   z-index: 10;
   font-size: 50px;
@@ -154,9 +153,9 @@ body {
 }
 
 .imgTXT:hover {
-  color: white;
+  color: lightblue;
   opacity: 1;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.7);
   transition: 0.1s;
 }
 
@@ -184,8 +183,14 @@ body {
   border-radius: 8px;
 
   text-align: left;
-  
 
+  transition: 0.1s;
+
+}
+
+.main:hover {
+  transition: 0.1s;
+  transform: translateY(-10px);
 }
 
 .main-text {
@@ -198,10 +203,23 @@ body {
 
   display: inline-block; 
   text-align: left; 
-  padding: 20px; 
-  height: 130px;
+  padding: 15px 25px; 
+  height: 180px;
 
   border-radius: 0px 0px 7px 7px;
+}
+
+.cardLanguages {
+  padding-top: 30px;
+}
+
+.cardLangText {
+  font-size: 14px;
+  margin-right: 8px; 
+  padding: 4px 15px; 
+  background-color: var(--indexcolor); 
+  color: var(--inversefont);
+  border-radius: 15px;
 }
 
 .cardTitle {
@@ -211,12 +229,14 @@ body {
 .cardDate {
   float: right; 
   color: var(--mainfont); 
-  font-size: 14px
+  font-size: 14px;
+  font-family: SFUIBold;
 }
 
 .cardText {
   font-size: 17px;
   color: var(--lowkeyfont);
+  height: 60px;
 }
 
 .navbar-div {
@@ -581,7 +601,6 @@ body {
   }
 
   .img {
-    
     
     width: 100vw;
     height: calc(100vw * 0.63);
