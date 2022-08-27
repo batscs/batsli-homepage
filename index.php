@@ -9,6 +9,12 @@
         <link rel="icon" href="img/batsli_square.png">
         <title> /home </title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta content="bats.li" property="og:title" />
+        <meta content="Elit est quis ea id. Nulla consectetur do ut magna magna aliquip labore." property="og:description" />
+        <meta content="https://bats.li/home" property="og:url" />
+        <meta content="https://bats.li/home/img/index_thumbnail.png" property="og:image" />
+        <meta content="#43B581" data-react-helmet="true" name="theme-color" />
+        <meta name="twitter:card" content="summary_large_image">
     </head>
 
     <style>
