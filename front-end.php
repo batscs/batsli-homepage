@@ -8,8 +8,8 @@
                         <td onclick="toggleDarkMode()" class="navbar-td-darkmode navbar-td"> <img id="dark-mode-img" src="img/dark_mode_on.png"> </td>
                         <td class="navbar-td"> <a class="boldfont" href="../home">Home</a> </td>
                         <td class="navbar-td"> <a class="boldfont" href="work">Work</a> </td>
-                        <td class="navbar-td"> <a class="boldfont" href="about">About</a> </td>
-                        <td class="navbar-td-spacer-before navbar-td"> <a class="boldfont" href="about#contact"> Contact </a> </td>
+                        <!-- <td class="navbar-td"> <a class="boldfont" href="about">About</a> </td> -->
+                        <td class="navbar-td-spacer-before navbar-td"> <a class="boldfont" href="about"> About </a> </td>
                         <td> <div class="desktop navbar-td-spacer"> </div> </td>
                         <td style="width: max-content" class="mobile navbar-td"> <a class="boldfont" href="#otherLinks"> ></a> </td>
                         <td class="navbar-td-spacer-after navbar-td"> <a class="boldfont" href="login">Login</a> </td>
@@ -23,7 +23,7 @@
 
                 // default Theme wird gesetzt beim ersten Besuch der Website
                 if (localStorage.getItem("theme") == null) {
-                    localStorage.setItem("theme", "light");
+                    localStorage.setItem("theme", "dark"); // dark oder light
                 }
 
                 let savedTheme = localStorage.getItem("theme");
@@ -116,9 +116,14 @@
         $defaultIconPath = "img/languages/";
 
         $availableLangs = array(
-            "javascript" => $defaultIconPath . "javascript.png",
-            "html" => $defaultIconPath . "html.png",
-            "css" => $defaultIconPath . "css.png",
+            "php" => "PHP",
+            "html" => "HTML",
+            "mysql" => "MySQL",
+            "javascript" => "JavaScript",
+            "java" => "Java",
+            "python" => "Python",
+            "css" => "CSS",
+            "autohotkey" => "AutoHotKey",
         );
 
         ?>
@@ -146,7 +151,7 @@
                         <?php
                             foreach ($usedLangs as $lang) {
                                 /* ?> <img title="<?php echo $lang;?>" style="width: 35px" src="<?php echo $availableLangs[$lang]; ?>"> <?php */
-                                ?> <a class="cardLangText" > <?php echo $lang; ?></a> <?php
+                                ?> <a class="cardLangText" > <?php echo $availableLangs[$lang]; ?></a> <?php
                             }
                         ?>
                     </div>
@@ -154,6 +159,16 @@
                 </div>
 
             </div>
+        <?php
+    }
+
+    function drawAboutLink($title, $imgsrc, $href) {
+        ?>
+            <a href="<?php echo $href; ?>" class="aboutLink">
+                <img src="img/about/<?php echo $imgsrc; ?>" class="aboutLinkIcon">
+                <div class="aboutLinkText"> <?php echo $title; ?> </div>
+                <div class="aboutLinkArrow"> ➜ </div>
+            </a>
         <?php
     }
 ?>

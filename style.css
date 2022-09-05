@@ -120,6 +120,149 @@ body {
   
 }
 
+.aboutLinkContainer {
+  width: 100%;
+  max-width: 500px;
+  background-color: rgba(255,255,255,0);
+  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;;
+
+  max-width: 1250px;
+
+  gap: 40px 40px;
+
+  padding: 40px 0px;
+}
+
+.aboutLink {
+  background-color: var(--softvariation);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+  height: 50px;
+  padding: 15px 15px;
+
+  width: 300px;
+  max-width: 90%;
+
+  text-align: left;
+
+  transition: 0.1s;
+
+  display: flex;
+  flex-direction: row;
+
+  font-size: 24px;
+
+  border-radius: 7px;
+  text-decoration: none;
+}
+
+.aboutLink:hover {
+  transition: 0.1s;
+  scale: 1.05;
+
+  -webkit-filter: brightness(130%);
+}
+
+.aboutLinkIcon {
+  
+  width: 50px;
+  height: 50px;
+
+  border: none;
+  outline: none;
+
+  border-radius: 7px;
+}
+
+.aboutLinkText {
+  margin: auto 0;
+  margin-left: 30px;
+}
+
+.aboutLinkArrow {
+  margin: auto 0;
+  margin-left: auto;
+  margin-right: 20px;
+  font-size: 30px;
+  opacity: 0.8;
+}
+
+.aboutSection {
+  
+  border-radius: 15px;
+  margin-bottom: 40px;
+}
+
+.contactForm {
+  padding-bottom: 30px;
+}
+
+.contactForm input, textarea {
+  padding: 10px;
+  font-size: 25px;
+  margin-bottom: 20px;
+
+  outline: 0;
+  background-color: var(--softvariation);
+
+
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: var(--lowkeyfont);
+
+  color: var(--mainfont);
+
+  resize: vertical;
+
+  min-height: 60px;
+}
+
+.contactForm button {
+  width: 100%;
+}
+
+.contactFormMessage {
+  width: 100%;
+}
+
+.contactFormSubject {
+  width: 100%;
+}
+
+.contactFormName {
+  width: 236px;
+  margin-right: 41px;
+
+}
+
+.contactFormTitle {
+  text-align: left;
+
+  font-size: 22px;
+  font-weight: bold;
+
+  margin-top: 10px;
+}
+
+.contactformTitle-Name {
+  display: inline-block;
+  width: 280px;
+}
+
+.contactformTitle-Email {
+  display: inline-block;
+  width: 355px;
+}
+
+.contactFormEmail {
+  width: max-content;
+}
+
 .img {
   cursor: pointer;
 
@@ -190,7 +333,7 @@ body {
 
 .main:hover {
   transition: 0.1s;
-  transform: translateY(-10px);
+  scale: 1.05;
 }
 
 .main-text {
@@ -204,17 +347,17 @@ body {
   display: inline-block; 
   text-align: left; 
   padding: 15px 25px; 
-  height: 180px;
+  height: 160px;
 
   border-radius: 0px 0px 7px 7px;
 }
 
 .cardLanguages {
-  padding-top: 30px;
+  padding-top: 15px;
 }
 
 .cardLangText {
-  font-size: 14px;
+  font-size: 13px;
   margin-right: 8px; 
   padding: 4px 15px; 
   background-color: var(--indexcolor); 
@@ -244,6 +387,8 @@ body {
   width: 100%; 
   padding-bottom: 2px;
   height: max-content;
+
+  z-index: 20;
 }
 
 .navbar-div table {
@@ -268,10 +413,11 @@ body {
 }
 
 .navbar-td-spacer {
-  background-color: var(--accent);
+  background-color: var(--inversefont);
   height: 40px; 
   width: 4px;
   border-radius: 5px;
+  opacity: 0.3;
 
 }
 
@@ -542,11 +688,12 @@ body {
 }
 
 .aboutTitle {
-  text-align: left;
-  font-size: 25px;
-  font-weight: bold;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bolder;
 
-  padding-top: 10vh;
+  padding-top: 30px;
+  margin-bottom: 40px;
 }
 
 .aboutParagraph {
@@ -590,10 +737,13 @@ body {
     margin-bottom: 30px;
     margin-top: 30px;
 
+    box-shadow: none;
+
   }
 
   .main-text {
     padding: 15px;
+    border-radius: 0px;
   }
 
   .imgTXT {
@@ -606,6 +756,10 @@ body {
     height: calc(100vw * 0.63);
     object-fit: cover;
     overflow: hidden;
+
+    border-radius: 0px;
+
+    
     
   }
 
@@ -620,13 +774,15 @@ body {
   }
 
   .navbar-td-darkmode img {
-    width: 20px;
+    width: 33px;
+    margin: 0;
+    padding: 0;
   }
 
   .navbar-td {
-    font-size: 5vw;
+    font-size: 5.5vw;
     width: 20vw;
-    padding: 5px 10px;
+    padding: 5px 13px;
 
     white-space: nowrap;
   }
@@ -648,7 +804,7 @@ body {
   }
 
   .project-filter {
-    padding-bottom: 25px;
+    padding-bottom: 10px;
   }
 
   .filter-container {

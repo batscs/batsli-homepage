@@ -241,7 +241,7 @@
                 </div>
 
                 <div class="index-flex-links">
-                    <a href="mailto:contact@bats.li"> <img class="index-img" src="img/index_email.png"> </a>
+                    <a href="mailto:direct@bats.li"> <img class="index-img" src="img/index_email.png"> </a>
                     <a href="https://github.com/batscs"> <img class="index-img" src="img/index_github.png"> </a>
                     <a href="https://discord.com/users/170264645397905408"> <img class="index-img" src="img/index_discord.png"> </a>
                 </div>

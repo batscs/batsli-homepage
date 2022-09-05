@@ -13,43 +13,78 @@
 
     
 
-    <div style="height: 100%">
+    <div style="min-height: 85%">
         <?php drawNavbar(); ?>
 
         <center>
 
-            <div style="max-width: 700px">
+            <div style="max-width: 700px;">
 
                 <div style="padding-top: 30px; padding-bottom: 20px">
-                    <?php echo customText("Who is this bats?", "pageHeader"); ?>
+                    <?php echo customText("Connect with me", "pageHeader"); ?>
                 </div>
 
+                <section style="display: none" id="contact" class="aboutSection">
+                    <p class="aboutTitle"> Contact Me!</p>
+                        <form class="contactForm">
+                            <p class="contactFormTitle-Name contactFormTitle"> Name </p> <p class="contactFormTitle-Email contactFormTitle"> Email </p> <br> <br>
+                            <input class="contactFormName"> <input class="contactFormEmail"> <br>
+                            <p class="contactFormTitle"> Subject </p> <br> 
+                            <input class="contactFormSubject "> <br>
+                            <p class="contactFormTitle"> Message </p> <br>
+                            <textarea class="contactFormMessage"></textarea> <br>
+                            <button class="button"> Send! </button>
+                        </form>
+                </section>
+
+                <div style="" class="aboutLinkContainer">
+
+                    <?php drawAboutLink("E-Mail", "email.png", "mailto://direct@bats.li"); ?>
+
+                    <?php drawAboutLink("GitHub", "github.png", "https://github.com/batscs"); ?>
+
+                    <?php drawAboutLink("Steam", "steam.png", "https://steamcommunity.com/id/batscs"); ?>
+
+                    <?php drawAboutLink("Discord", "discord.png", "https://discord.com/users/170264645397905408"); ?>
+
+                    <?php drawAboutLink("Faceit", "faceit.png", "https://www.faceit.com/en/players/bats"); ?>
+                    
+                    <?php drawAboutLink("Valorant", "valorant.png", "https://tracker.gg/valorant/profile/riot/bats%23csgo/overview"); ?>
+                    
+                    <?php // drawAboutLink("Valorant Immortal", "immortal.png", "https://steamcommunity.com/profiles/batscs"); ?>
+
+
+                    <?php // drawAboutLink("Instagram", "instagram.png", "https://steamcommunity.com/profiles/batscs"); ?>
+
+                    <?php // drawAboutLink("Twitter", "twitter.png", "https://steamcommunity.com/profiles/batscs"); ?>
+
+                    <?php // drawAboutLink("YouTube", "youtube.png", "https://steamcommunity.com/profiles/batscs"); ?>
+
+                    </div>
+                </div>
+
+                <!--
                 <section class="aboutSection">
                     <p class="aboutTitle"> About me </p>
                     <p class="aboutParagraph"> Quis ex pariatur tempor aliqua commodo dolor irure in cupidatat sit dolore aliqua. Aliquip nisi duis veniam laboris officia veniam fugiat. Ea aliqua eiusmod ad qui mollit minim sunt pariatur do voluptate. Quis id proident in eu adipisicing eu nisi. Do nulla officia exercitation aliqua. Quis aliqua ut amet velit pariatur labore et amet commodo. </p>
                 </section>
 
                 <section class="aboutSection">
-                <p class="aboutTitle"> Education </p>
-                <p class="aboutParagraph"> Ex ullamco do sunt consectetur aliqua sint amet cupidatat in officia eu ea quis commodo. Officia mollit consectetur deserunt nulla pariatur ut mollit ipsum irure adipisicing amet qui mollit adipisicing. Incididunt qui irure labore qui minim sint excepteur pariatur. Irure minim deserunt adipisicing deserunt sunt excepteur dolor. Dolor in nulla dolor ullamco laboris elit cupidatat sint mollit. Ea ea anim Lorem anim et cillum voluptate voluptate irure qui fugiat labore anim. </p> 
+                    <p class="aboutTitle"> Education </p>
+                    <p class="aboutParagraph"> Ex ullamco do sunt consectetur aliqua sint amet cupidatat in officia eu ea quis commodo. Officia mollit consectetur deserunt nulla pariatur ut mollit ipsum irure adipisicing amet qui mollit adipisicing. Incididunt qui irure labore qui minim sint excepteur pariatur. Irure minim deserunt adipisicing deserunt sunt excepteur dolor. Dolor in nulla dolor ullamco laboris elit cupidatat sint mollit. Ea ea anim Lorem anim et cillum voluptate voluptate irure qui fugiat labore anim. </p> 
                 </section>
 
                 <section class="aboutSection">
-                <p class="aboutTitle"> Experience </p>
-                <p class="aboutParagraph"> Commodo qui eu irure irure. Tempor ea in ad occaecat minim in aliquip reprehenderit exercitation laborum. Nisi cillum eiusmod commodo et dolore. Proident ipsum velit officia fugiat ipsum eu laboris mollit exercitation laboris consequat. Proident consequat dolor deserunt Lorem irure sint adipisicing est. </p> 
+                    <p class="aboutTitle"> Experience </p>
+                    <p class="aboutParagraph"> Commodo qui eu irure irure. Tempor ea in ad occaecat minim in aliquip reprehenderit exercitation laborum. Nisi cillum eiusmod commodo et dolore. Proident ipsum velit officia fugiat ipsum eu laboris mollit exercitation laboris consequat. Proident consequat dolor deserunt Lorem irure sint adipisicing est. </p> 
                 </section>
 
                 <section class="aboutSection">
-                <p class="aboutTitle"> eSports </p>
-                <p class="aboutParagraph"> Tempor qui in anim eiusmod Lorem nostrud deserunt occaecat ullamco nostrud elit et culpa. Ex reprehenderit nisi esse magna commodo. Aute dolore ipsum esse sint deserunt qui eu consequat laboris duis tempor enim laboris. Enim culpa non officia officia est ut minim fugiat reprehenderit elit ipsum do veniam ipsum. Consectetur eiusmod sunt deserunt tempor. Duis nostrud ad tempor esse irure culpa est cupidatat eiusmod cupidatat proident minim. Laboris voluptate qui duis veniam non fugiat ea esse exercitation occaecat. </p>
+                    <p class="aboutTitle"> eSports </p>
+                    <p class="aboutParagraph"> Tempor qui in anim eiusmod Lorem nostrud deserunt occaecat ullamco nostrud elit et culpa. Ex reprehenderit nisi esse magna commodo. Aute dolore ipsum esse sint deserunt qui eu consequat laboris duis tempor enim laboris. Enim culpa non officia officia est ut minim fugiat reprehenderit elit ipsum do veniam ipsum. Consectetur eiusmod sunt deserunt tempor. Duis nostrud ad tempor esse irure culpa est cupidatat eiusmod cupidatat proident minim. Laboris voluptate qui duis veniam non fugiat ea esse exercitation occaecat. </p>
                 </section>
+                -->
 
-                <section id="contact" class="aboutSection">
-                <p class="aboutTitle"> Contact </p>
-                <p class="aboutParagraph"> Dolore culpa officia nostrud Lorem fugiat non magna. Labore voluptate consequat sint consectetur. Labore deserunt aliquip commodo incididunt veniam incididunt anim et elit non consequat. Ea laborum sunt et sint elit in. Eiusmod non id sint nulla cillum enim. Magna anim magna eu adipisicing eu est sunt. Sunt laboris laborum dolore aliqua excepteur. </p>
-                </section>
-
-                <a style="font-size: 40px"> coming soon™ </a>
 
                 <!-- <div style="width: 900px; padding-bottom: 100px">
 
