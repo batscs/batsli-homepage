@@ -30,7 +30,7 @@
             background-repeat: no-repeat;
             background-size: cover;
             */
-            background-color: #F0F2F5;
+            background-color: #232530;
             
             width: 100%;
             
@@ -40,51 +40,38 @@
         .index-img {
             width: 2vw;
             margin-right: 1.5vw;
+            transition: 0.1s;
+        }
+
+        .index-img:hover {
+            transform: scale(1.1);
+            transition: 0.1s;
         }
 
         .index-title {
-            color: #515369; 
+            color: #FFFFFF; 
             font-size: 7vw;
         }
 
         .index-subtitle {
-            color: #797B8C; 
+            color: #FFFFFF; 
             font-size: 1.35vw;
             text-decoration: none;
         }
 
         .index-description {
-            color: #797B8C;
+            color: #FFFFFF;
             overflow-wrap: break-word;
             width: 20vw;
-            max-width: 62vw;
+            
 
             font-size: 1.1vw;
 
             margin-top: 1vw;
         }
 
-        .index-href-button {
-            cursor: pointer;
-            font-weight: bold;
-
-            padding: 10px;
-            border: 4px solid white;
-            border-radius: 8px;
-
-            background-color: rgba(255,255,255, 1);
-            font-weight: bold;
-            color: black;
-
-            text-decoration: none;
-        }
-
-        .index-href-button-container {
-            padding-top: 60px;
-        }
-
         .index-flex-links {
-            margin-top: 4vw;
+            margin-top: 2.3vw;
 
             display: flex;
             flex-direction: row;
@@ -92,7 +79,8 @@
             justify-content: left;
 
             width: 100%;
-            max-width: 340px;
+            max-width: 100%;
+            
         }
 
         #siteContainer {
@@ -106,22 +94,23 @@
             padding-left: 4vw;
             padding-right: 4vw;
 
-            background-color: white;
-            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            background-color: #313242;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 12px;
+
             border-radius: 7px;
 
             width: 20vw;
 
-            max-height: 29vw;
+            max-height: 27vw;
 
             text-align: left;
 
         }
 
         .index-call2action {
-            background-color: #515369;
+            background-color: #6D59A9;
             color: white;
-            padding: 15px;
+            padding: 1vw;
             border-radius: 7px;
             text-decoration: none;
             text-align: center;
@@ -129,25 +118,24 @@
 
             margin-top: 3vw;
 
-            transition: 0.2s;
+            transition: 0.1s;
 
-            font-weight: bold;
         }
 
         .index-call2action:hover {
-            transition: 0.2s;
-            background-color: #2F314F;
+            transition: 0.1s;
+            filter: saturate(3);
+            transform: scale(1.02);
         }
 
         .index-secondaryAction {
-            background-color: #333333;
+            background-color: #555572;
             color: white;
             margin-top: 2vw;
         }
 
-        .index-secondaryAction:hover {
-            background-color: #202020;
-        }
+        
+
 
         @media only screen and (max-device-width: 480px) {
 
@@ -160,14 +148,18 @@
            }
 
            .index-description {
-                font-size: 4vw;
-                width: 63vw;
+                font-size: 4.3vw;
+                width: 100%;
                 margin-top: 4vw;
+
            }
 
            .index-call2action {
-                font-size: 4vw;
+                font-size: 5vw;
                 margin-top: 8vw;
+                padding: 4.5vw;
+
+                font-weight: bold;
            }
 
            .subTitleIMG {
@@ -207,15 +199,14 @@
                 margin: 0 auto;
                 margin-top: 30px;
 
-                width: 65vw;
+                width: 73vw;
 
                 height: 70vh;
                 max-height: 500px;
                 
-                padding: 50px;
+                padding: 30px;
                 
             }
-
             
         }
 
@@ -229,9 +220,9 @@
 
                 <a style="font-family: BostonBold" class="index-title lowkey-title boldfont"> bats</a> <br>
 
-                <div style="display: flex; width: max-content; flex-direction: column"> 
+                <div style="display: flex; width: 100%; flex-direction: column"> 
                     
-                    <a href="about" class="index-subtitle lowkey-title boldfont" style="cursor: pointer"> Full Stack Developer </a> 
+                    <a href="about" class="index-subtitle lowkey-title boldfont" style="cursor: pointer"> Computer Science Student </a> 
 
                     <a class="index-description"> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren. </a>
 
