@@ -101,7 +101,7 @@
 
             width: 20vw;
 
-            max-height: 27vw;
+            max-height: 27.8vw;
 
             text-align: left;
 
@@ -119,6 +119,8 @@
             margin-top: 3vw;
 
             transition: 0.1s;
+
+            font-weight: bold;
 
         }
 
