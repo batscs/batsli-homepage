@@ -61,8 +61,10 @@
         ?>
             <center class="footer-bg">
                 <footer class="footer-container" style="">
+                    <div class="footer-divider"> </div>
                     <p style="font-size: 22px"> designed and built by <a class="boldfont"> bats </a> </p> <br>
                     <p style="font-size: 20px"> <a href="mailto:contact@bats.li" class="boldfont" style="text-decoration: none">contact@bats.li</a> </p>
+                    
                 </footer>
             </center>
         <?php
