@@ -173,6 +173,16 @@
             </a>
         <?php
     }
+
+    function drawAboutWhoCard($title, $desc, $style = "") {
+        ?>
+            <div class="<?php echo $style; ?> aboutWhoCard"> 
+                <p class="aboutWhoCard-title"> <?php echo $title;?> </p> 
+                <div class="aboutWhoCard-title-underline"> </div>
+                <a class="aboutWhoCard-desc"> <?php echo $desc;?> </a>
+            </div>
+        <?php
+    }
 ?>
 
 <script>

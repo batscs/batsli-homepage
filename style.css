@@ -49,6 +49,7 @@ html {
   padding: 0;
   font-family: SFUIRegular;
   color: var(--mainfont);
+
 }
 
 :root {
@@ -122,6 +123,64 @@ body {
   
 }
 
+.aboutWho {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  gap: 20px;
+  margin-top: 20px;
+  margin-bottom: 70px;
+  flex-grow: 1;
+
+  /* background-color: rgba(0,0,0, 0.1); */
+
+}
+
+.aboutWhoCard {
+  /* background-color: var(--softvariation); */
+  width: 35%;
+  
+  height: max-content;
+
+  padding: 20px;
+
+  border-radius: 7px;
+
+  /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
+
+  /* background-color: rgba(0,0,0, 0.1); */
+
+  text-align: left;
+
+  margin-left: 40px;
+}
+
+.aboutWhoCard-long {
+  width: 83%;
+  padding-right: 50px;
+  margin-bottom: 20px;
+}
+
+.aboutWhoCard-title {
+  font-size: 34px;
+  font-weight: bold;
+  
+}
+
+.aboutWhoCard-title-underline {
+  width: 98%;
+  height: 3px;
+  background-color: var(--filterhover);
+
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.aboutWhoCard-desc {
+  padding-top: 50px;
+  font-size: 20px;
+}
+
 .aboutLinkContainer {
   width: 100%;
   max-width: 500px;
@@ -137,6 +196,7 @@ body {
   gap: 40px 40px;
 
   padding: 40px 0px;
+  margin-bottom: 70px;
 }
 
 .aboutLink {
@@ -389,17 +449,16 @@ body {
 .navbar-div {
   background-color: var(--softheavy); 
   width: 100%; 
-  padding-bottom: 5px;
-  padding-top: 5px;
+
   height: max-content;
 
   z-index: 20;
+
 }
 
 .navbar-div table {
   width: 350px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+
 }
 
 .navbar-td {
@@ -450,6 +509,8 @@ body {
 
   padding: 15px;
   border-radius: 12px;
+
+  transition: 0.1s;
 }
 
 .navbar-td a:hover {
@@ -599,11 +660,14 @@ body {
 
   padding: 0.6em 1em;;
   padding-top: 0.8em;
+
+  transition: 0.1s;
   
 }
 
 .filter-btn:hover{
-  background: var(--accent);
+  background: var(--navbarhighlight);
+  transition: 0.1s;
   
 }
 
@@ -783,7 +847,7 @@ body {
     margin: 0 auto;
     padding: 0;
 
-    width: 91vw;
+    width: 84vw;
 
     height: 100%;
     margin-bottom: 0px;
@@ -791,6 +855,10 @@ body {
 
     box-shadow: none;
 
+  }
+
+  .cardDate {
+    font-size: 12px;
   }
 
   .main-text {
@@ -805,7 +873,7 @@ body {
   .img {
     
     width: 100%;
-    height: calc(91vw * 0.63);
+    height: calc(84vw * 0.63);
     object-fit: cover;
     overflow: hidden;
 
@@ -868,6 +936,23 @@ body {
 
   .filter-container {
     box-shadow: none;
+  }
+
+  .aboutWho {
+    margin-bottom: 20px;
+  }
+  
+  .aboutWhoCard {
+    width: 80%;
+    margin-left: 20px;
+  }
+  
+  .aboutWhoCard-title {
+    font-size: 30px;
+  }
+
+  .aboutLink {
+    width: 270px;
   }
 
 }

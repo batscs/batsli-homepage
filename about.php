@@ -18,11 +18,7 @@
 
         <center>
 
-            <div style="max-width: 700px;">
-
-                <div style="padding-top: 30px; padding-bottom: 20px">
-                    <?php echo customText("Connect with me", "pageHeader"); ?>
-                </div>
+            <div style="max-width: 800px; padding-top: 30px;">
 
                 <section style="display: none" id="contact" class="aboutSection">
                     <p class="aboutTitle"> Contact Me!</p>
@@ -37,6 +33,21 @@
                         </form>
                 </section>
 
+                <?php echo customText("About Me", "pageHeader"); ?>
+
+                <div class="aboutWho">
+
+                    <?php
+                        $desc = "Nulla ea proident ea mollit do adipisicing incididunt proident deserunt. In ullamco minim minim eu officia irure eiusmod proident anim do qui minim incididunt esse.";
+                        drawAboutWhoCard("General", $desc, "aboutWhoCard-long");
+                        drawAboutWhoCard("Experience", $desc);
+                        drawAboutWhoCard("eSports", $desc);
+                    ?>
+
+                </div>
+
+                
+                <?php echo customText("Connect with me", "pageHeader"); ?>
                 <div style="" class="aboutLinkContainer">
 
                     <?php drawAboutLink("E-Mail", "email.png", "mailto://direct@bats.li"); ?>
