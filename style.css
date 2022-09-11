@@ -36,7 +36,8 @@
 
 
 .boldfont {
-  font-family: SFUIBold;
+  font-family: SFUIBold, BostnBold, Arial;
+  font-weight: bold;
 }
 
 html {
@@ -47,7 +48,7 @@ html {
 * {
   margin: 0;
   padding: 0;
-  font-family: SFUIRegular;
+  font-family: SFUIRegular, Boston, Arial;
   color: var(--mainfont);
 
 }

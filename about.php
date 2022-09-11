@@ -40,8 +40,13 @@
                     <?php
                         $desc = "Nulla ea proident ea mollit do adipisicing incididunt proident deserunt. In ullamco minim minim eu officia irure eiusmod proident anim do qui minim incididunt esse.";
                         drawAboutWhoCard("General", $desc, "aboutWhoCard-long");
+
+                        $desc = "Cillum aliquip officia enim mollit amet eiusmod ut sit. Cillum ea officia excepteur sit cupidatat sint dolore aliquip qui occaecat labore nulla incididunt.";
                         drawAboutWhoCard("Experience", $desc);
+
+                        $desc = "Veniam ut aliqua laborum cupidatat aute ipsum et proident. Cupidatat ipsum in ad exercitation.";
                         drawAboutWhoCard("eSports", $desc);
+
                     ?>
 
                 </div>
