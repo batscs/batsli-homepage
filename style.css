@@ -78,7 +78,7 @@ html {
   --headercolor: #1E1E1E;
 
   --filterhover: #464646;
-  --navbarhighlight: transparent;
+  --navbarhighlight: #1E1E1E;
   
   
 }
@@ -824,7 +824,7 @@ body {
   }
 
   .pageHeader {
-    padding-top: 10px;
+    
     font-size: 8.2vw;
   }
 
@@ -889,9 +889,14 @@ body {
   .navbar-div {
     
     height: fit-content;
-    padding: 15px 0px;
-    
+    padding: 8px 0px;
+    padding-bottom: 10px;
+
     position: fixed;
+    bottom: 0px;
+    border-radius: 30px;
+    margin: 15px;
+    width: 92vw;
 
     overflow-x: auto;
 
@@ -919,10 +924,7 @@ body {
 
   .footer-container {
     max-width: 100vw;
-  }
-
-  .pageHeader {
-    margin-top: 60px;
+    padding-bottom: 130px;
   }
 
   .input, .input-label, .input-output-error, .button, .multiform-title {
@@ -957,5 +959,15 @@ body {
   .aboutLink {
     width: 270px;
   }
+
+  
+.cardLangText {
+  font-size: 13px;
+  margin-right: 8px; 
+  padding: 4px 8px; 
+  background-color: var(--indexcolor); 
+  color: var(--inversefont);
+  border-radius: 15px;
+}
 
 }
