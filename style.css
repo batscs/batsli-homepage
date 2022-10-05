@@ -141,7 +141,7 @@ body {
   /* background-color: var(--softvariation); */
   width: 35%;
   
-  height: max-content;
+
 
   padding: 20px;
 
@@ -178,8 +178,9 @@ body {
 }
 
 .aboutWhoCard-desc {
-  padding-top: 50px;
+  
   font-size: 20px;
+  
 }
 
 .aboutLinkContainer {
@@ -459,6 +460,7 @@ body {
 
 .navbar-div table {
   width: 350px;
+  margin-top: 5px;
 
 }
 
@@ -888,12 +890,12 @@ body {
     
     height: fit-content;
     padding: 15px 0px;
+    
     position: fixed;
 
     overflow-x: auto;
 
-    filter: brightness(80%);
-
+    background-color: var(--navbarhighlight);
   }
 
   .navbar-td-darkmode img {
