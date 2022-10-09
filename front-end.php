@@ -2,7 +2,7 @@
 
     function drawNavbar() {
         ?>
-            <div class="navbar-div" style="">
+            <div id="navbar" class="navbar-div" style="">
                 <center> <table style="float: center">
                     <tr>
                         <td onclick="toggleDarkMode()" class="navbar-td-darkmode navbar-td"> <img id="dark-mode-img" src="img/dark_mode_on.png"> </td>
@@ -60,10 +60,36 @@
     function drawFooter() {
         ?>
             <center class="footer-bg">
+                <div class="footer-divider"> </div>
                 <footer class="footer-container" style="">
-                    <div class="footer-divider"> </div>
-                    <p style="font-size: 22px"> designed and built by <a class="boldfont"> bats </a> </p> <br>
-                    <p style="font-size: 20px"> <a href="mailto:contact@bats.li" class="boldfont" style="text-decoration: none">contact@bats.li</a> </p>
+                    
+                    <div class="footer-flex-item-main footer-flex-item"> 
+                        <p> <a class="footer-bigtext footer-text"> bats</a><a class="footer-text">.li </a> </p>
+
+                        <p class="footer-info"> <a> Designed & Built by <a style="color: var(--mainfont)">bats</a> </a> </p>
+                        <p class="footer-info"> <a> here since April 2021 </a> </p>
+                        <p class="footer-info"> <a> <wbr> </a> </p>
+                        <p class="footer-info"> <a onclick="scrollToTop()" style="cursor: pointer"> back to the top </a> </p>
+
+                        <!--
+                        <p style="font-size: 22px"> designed and built by <a class="boldfont"> bats </a> </p> <br>
+                        <p style="font-size: 20px"> <a href="mailto:contact@bats.li" class="boldfont" style="text-decoration: none">contact@bats.li</a> </p>
+                        -->
+                    </div>
+
+                    <div class="footer-flex-item"> 
+                        <p> <a class="footer-bigtext footer-text"> Contact</a> </p>
+                        <p class="footer-info"> <a href="mailto:contact@bats.li"> Email Contact </a> </p>
+                        <p class="footer-info"> <a href="about#connect"> More Links </a> </p>
+                    </div>
+
+                    <script>
+                        function scrollToTop() {
+
+                            window.scrollTo({top: 0, behavior: 'smooth'});
+
+                        }
+                    </script>
                     
                 </footer>
             </center>

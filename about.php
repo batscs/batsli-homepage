@@ -52,6 +52,7 @@
                 </div>
 
                 
+                <div id="connect"> </div>
                 <?php echo customText("Connect with me", "pageHeader"); ?>
                 <div style="" class="aboutLinkContainer">
 

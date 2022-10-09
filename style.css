@@ -460,7 +460,7 @@ body {
 
 .navbar-div table {
   width: 350px;
-  margin-top: 5px;
+  padding-top: 5px;
 
 }
 
@@ -770,13 +770,58 @@ body {
   margin-bottom: 30px;
 }
 
-.footer-bg p {
+.footer-text {
+  font-size: 25px;
   color: var(--lowkeyfont);
+
+  font-family: BostonBold;
+}
+
+.footer-bigtext {
+  font-size: 45px;
+
+  font-family: BostonBold;
+  color: var(--mainfont);
+}
+
+.footer-info a{
+  text-decoration: none;
+  color: var(--lowkeyfont);
+
+  font-size: 24px;
+  font-weight: bold;
+
+}
+
+.footer-info {
+  margin-top: 10px;
 }
 
 .footer-container {
   padding-top: 0px;
   padding-bottom: 40px;
+  max-width: 800px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  gap: 0px 50px;
+
+}
+
+.footer-flex-item {
+  width: 230px;
+  height: max-content;
+
+  padding: 20px;
+
+  text-align: left;
+
+}
+
+.footer-flex-item-main {
+  width: 310px;
 }
 
 .mobile {
@@ -960,14 +1005,19 @@ body {
     width: 270px;
   }
 
+  .footer-container {
+    flex-direction: column;
+    margin-left: 15px;
+  }
+
   
-.cardLangText {
-  font-size: 13px;
-  margin-right: 8px; 
-  padding: 4px 8px; 
-  background-color: var(--indexcolor); 
-  color: var(--inversefont);
-  border-radius: 15px;
-}
+  .cardLangText {
+    font-size: 13px;
+    margin-right: 8px; 
+    padding: 4px 8px; 
+    background-color: var(--indexcolor); 
+    color: var(--inversefont);
+    border-radius: 15px;
+  }
 
 }
