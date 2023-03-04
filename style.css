@@ -372,6 +372,8 @@ body {
   flex-wrap: wrap;
   justify-content: center;
 
+  width: 70vw;
+
   gap: 50px 70px;
   padding-top: 30px;
 }
