@@ -83,6 +83,14 @@
                         <p class="footer-info"> <a href="about#connect"> More Links </a> </p>
                     </div>
 
+                    <div class="footer-flex-item"> 
+                        <p> <a class="footer-bigtext footer-text"> Content</a> </p>
+                        <p class="footer-info"> <a href="https://www.youtube.com/watch?v=bZe5J8SVCYQ"> filler content </a> </p>
+                        <p class="footer-info"> <a href="img/de_mirage.jpg"> de_mirage </a> </p>
+                        <p class="footer-info"> <a href="https://halbgeist.bats.li"> Halbgeist </a> </p>
+                        <p class="footer-info">  </p>
+                    </div>
+
                     <script>
                         function scrollToTop() {
 

@@ -50,24 +50,24 @@
 
         .index-title {
             color: #FFFFFF; 
-            font-size: 7vw;
+            font-size: 5vw;
         }
 
         .index-subtitle {
             color: #FFFFFF; 
             font-size: 1.35vw;
             text-decoration: none;
+            padding-top: 1vh;
         }
 
         .index-description {
             color: #FFFFFF;
             overflow-wrap: break-word;
             width: 20vw;
-            
 
-            font-size: 1.1vw;
+            font-size: 1.25vw;
 
-            margin-top: 1vw;
+            padding-top: 2vh;
         }
 
         .index-flex-links {
@@ -88,7 +88,7 @@
         }
 
         #centeredSiteContainer {
-            padding-top: 1vw;
+            padding-top: 2vw;
             padding-bottom: 12vw;
 
             padding-left: 4vw;
@@ -97,11 +97,11 @@
             background-color: #313242;
             box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 12px;
 
-            border-radius: 7px;
+            border-radius: 15px;
 
-            width: 20vw;
+            width: 22vw;
 
-            max-height: 27.8vw;
+            max-height: 60vh;
 
             text-align: left;
 
@@ -114,7 +114,7 @@
             border-radius: 7px;
             text-decoration: none;
             text-align: center;
-            font-size: 1.2vw;
+            font-size: 1.45vw;
 
             margin-top: 3vw;
 
@@ -126,8 +126,9 @@
 
         .index-call2action:hover {
             transition: 0.1s;
-            filter: saturate(3);
             transform: scale(1.02);
+            filter: saturate(3);
+
         }
 
         .index-secondaryAction {
@@ -153,6 +154,7 @@
                 font-size: 4.3vw;
                 width: 100%;
                 margin-top: 4vw;
+                padding-top: 0vh;
 
            }
 

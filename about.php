@@ -60,13 +60,21 @@
 
                     <?php drawAboutLink("GitHub", "github.png", "https://github.com/batscs"); ?>
 
-                    <?php drawAboutLink("Steam", "steam.png", "https://steamcommunity.com/id/batscs"); ?>
+                    <?php drawAboutLink("LinkedIn", "linkedin.png", "placeholder"); ?>
 
-                    <?php drawAboutLink("Discord", "discord.png", "https://discord.com/users/170264645397905408"); ?>
+                    <?php drawAboutLink("placeholder", "placeholder.png", "placeholder"); ?>
 
-                    <?php drawAboutLink("Faceit", "faceit.png", "https://www.faceit.com/en/players/bats"); ?>
+                    <?php drawAboutLink("placeholder", "placeholder.png", "placeholder"); ?>
+
+                    <?php drawAboutLink("placeholder", "placeholder.png", "placeholder"); ?>
+
+                    <?php // drawAboutLink("Steam", "steam.png", "https://steamcommunity.com/id/batscs"); ?>
+
+                    <?php // drawAboutLink("Discord", "discord.png", "https://discord.com/users/170264645397905408"); ?>
+
+                    <?php // drawAboutLink("Faceit", "faceit.png", "https://www.faceit.com/en/players/bats"); ?>
                     
-                    <?php drawAboutLink("Valorant", "valorant.png", "https://tracker.gg/valorant/profile/riot/bats%23csgo/overview"); ?>
+                    <?php // drawAboutLink("Valorant", "valorant.png", "https://tracker.gg/valorant/profile/riot/bats%23csgo/overview"); ?>
                     
                     <?php // drawAboutLink("Valorant Immortal", "immortal.png", "https://steamcommunity.com/profiles/batscs"); ?>
 

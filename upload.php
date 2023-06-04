@@ -25,7 +25,6 @@
                 <?php echo customText("File Upload", "pageHeader"); ?>
             </div>
         </center>
-
         <center>
             <div style="padding-top: 50px; height: 550px">
 
@@ -53,7 +52,7 @@
                                     echo "invalid access code! <br>";
                                 } else {
 
-                                    $target_dir = "../uploads/"; // directory bats.li/uploads
+                                    $target_dir = "../uploads/" . date("Y-m") . "/"; // directory bats.li/uploads
                                     $target_folder = generateRandomString(8) . "/"; // unique individual folder for each upload
                                     $target_name = basename($_FILES["fileToUpload"]["name"]); // file name from uploaded file
                                     $target_file = $target_dir . $target_folder . $target_name; // complete file directory
@@ -67,7 +66,7 @@
                                     }
                                 
                                     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
-                                        $url = "https://bats.li/uploads/" . $target_folder . $target_name;
+                                        $url = "https://bats.li/uploads/" . date("Y-m") . "/" .  $target_folder . $target_name;
                                         echo "<a style='font-size: 20px'> The file ". htmlspecialchars( basename( $_FILES["fileToUpload"]["name"])). " has been uploaded. </a> <br>";
                                         echo "<a style='font-size: 20px' href='" . $url . "'> " . $url . "</a>";
                                         echo "<br><br>";
@@ -91,7 +90,7 @@
                         <br>
                         <input type="file" class="mainfont button" name="fileToUpload" id="fileToUpload">
                         <br> <br> <br>
-                        <input type="submit" value="Upload Image" class="mainfont button" name="submit">
+                        <input type="submit" value="Upload File" class="mainfont button" name="submit">
                         <br> <br> <br>
                         <input type="submit" value="Logout" class="mainfont button" name="logout">
                     
